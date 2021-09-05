@@ -6,7 +6,7 @@
 
 > I was expected to create a home page and an about page close to those in [this Behance design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by [Cindy Shin](https://www.behance.net/adagio07). Since I was expected to personalize the content of the website, I imagined it for a random summer music camp for a teenager. 
 
-> You can see a video in which I present the final project [here](https://www.loom.com/).
+> You can watch a video in which I present the final project [here](https://www.loom.com/).
 
 ## Live Demo
 
