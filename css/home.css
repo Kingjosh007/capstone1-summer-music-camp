@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url("../assets/fonts/cocogoose_letterpress/COCOGOOSELETTERPRESS-TRIAL.ttf");
+}
+h1 {
+  font-family: Cocogoose, sans-serif;
+  color: #ec5242;
+}
+
+/*# sourceMappingURL=home.css.map */

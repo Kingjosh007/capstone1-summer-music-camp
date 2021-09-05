@@ -1,1 +1,9 @@
-@import "reset";
+@import "resets";
+@import "fonts";
+@import "colors";
+@import "layout";
+
+h1 {
+  font-family: $font-1;
+  color: $primary-2;
+}
