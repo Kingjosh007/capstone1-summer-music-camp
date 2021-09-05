@@ -4,7 +4,7 @@
 
 > This is my first capstone project in my journey at Microverse. It marks the end of Module 1. In this kind of project, we (the student) are supposed to build a "real life" type of project, putting together a maximum of the knowledge and skills acquired during the module. All this in 5 days ideally.
 
-> I was expected to create a home page and an about page close to those in [this Behance design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by [Cindy Shin](https://www.behance.net/adagio07). Since I was expected to personalize the content of the website, I imagined it for a random summer music camp for a teenager. 
+> I was expected to create a home page and an about page close to those in [this Behance design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by [Cindy Shin](https://www.behance.net/adagio07). Since I had to personalize the content of the website, I imagined it a random summer music camp for teenagers. 
 
 > You can watch a video in which I present the final project [here](https://www.loom.com/).
 
