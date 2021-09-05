@@ -1,44 +1,30 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My portfolio
+# Capstone Project 1: Summer music camp for teenagers
 
-> This project was part of my Microverse journey. I had to work on what would be my personal portfolio. The goal was to be able to parse a Figma design to create a beautiful UI using Flexbox, Grid CSS, images and backgrounds, while sticking to the best practices (Linter, Github Flow, Professional commits and documentation etc.)
+> This is my first capstone project in my journey at Microverse. It marks the end of Module 1. In this kind of project, we (the student) are supposed to build a "real life" type of project, putting together a maximum of the knowledge and skills acquired during the module. All this in 5 days ideally.
 
-> I was supposed to build a UI that is as close as possible to this Figma design: [Figma Template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10) 
+> I was expected to create a home page and an about page close to those in [this Behance design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by [Cindy Shin](https://www.behance.net/adagio07). Since I was expected to personalize the content of the website, I imagined it for a random summer music camp for a teenager. 
 
-This project was divided into 10 parts before getting to the full portfolio website. Each part corresponds to a specific branch. The 10 parts are listed below. The text in **bold** refers to the part I am currently working on. Refer to the corresponding branch.
-
-1. Setup and mobile version skeleton
-2. List of previous projects + About myself (mobile)
-3. Add a contact form + finish the mobile version
-4. Create the desktop version using media queries
-5. Deploy on Github Pages
-6. Changes regarding accessibility
-7. Mobile menu using JavaScript
-8. Popup window that includes the project details
-9. **Client-side validation in the contact form**
-10. Use local storage to save form data
-
+> You can see a video in which I present the final project [here](https://www.loom.com/).
 
 ## Live Demo
 
-Here is the link to the live version of this project: [See it live](https://kingjosh007.github.io/my-portfolio) 
+Here is the link to the live version of this project: [See it live](https://kingjosh007.github.io/) 
 
 
 ## Screenshots
 
 📱 **Mobile version** 
 
-&nbsp; &nbsp; ![mobile version](./screenshots/mobile_version.gif) &nbsp; &nbsp; ![mobile menu](./screenshots/mobile_menu.gif) 
 
 💻 **Desktop version** 
 
-&nbsp; &nbsp; ![desktop version](./screenshots/desktop_version.gif)
 
 
 ## Built With
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp; &nbsp; 	![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) &nbsp; &nbsp; ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp; &nbsp; 	![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) &nbsp; &nbsp; ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) &nbsp; &nbsp; ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) nbsp; &nbsp; ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) &nbsp; &nbsp; ![GitHub Actions](https://img.shields.io/badge/githubactions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) &nbsp; &nbsp; ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) &nbsp; &nbsp; ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) 
 
@@ -64,10 +50,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
-- [@Kingstalux](https://github.com/Kingstalux), which whom I created the contact form through pair-programming
-- A huge thanks to [@Tchilo](https://github.com/Tchilo) and [@benshidanny11](https://github.com/benshidanny11), from my morning session team, for reviewing the code of the desktop version
-- Hat tip to [@Goldinium](https://github.com/Goldinium) with whom I added some nice animations and effets through pair programming.
+- Heartfelt thanks to [Microverse](https://www.microverse.org/)
+- Hat tip to [Cindy Shin](https://www.behance.net/adagio07) for this awesome design we owe her. 
 
 ## 📝 License
 
