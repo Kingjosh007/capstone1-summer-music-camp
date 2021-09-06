@@ -12,6 +12,13 @@
 
 Here is the link to the live version of this project: [See it live](https://kingjosh007.github.io/) 
 
+## Getting Started
+
+To get a local copy of this project, do the following: 
+
+1. In your terminal, type `git clone git@github.com:Kingjosh007/capstone1-summer-music-camp.git` 
+2. In your file explorer, open the index.html file inside the `capstone1-summer-music-camp` folder.
+
 
 ## Screenshots
 
