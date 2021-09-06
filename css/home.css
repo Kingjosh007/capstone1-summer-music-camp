@@ -5,11 +5,15 @@
 }
 
 @font-face {
-  font-family: Cocogoose;
+  font-family: CocogooseLetterPress;
   src: url("../assets/fonts/cocogoose_letterpress/COCOGOOSELETTERPRESS-TRIAL.ttf");
 }
+@font-face {
+  font-family: Cocogoose;
+  src: url("../assets/fonts/cocogoose/Cocogoose_trial.ttf");
+}
 h1 {
-  font-family: Cocogoose, sans-serif;
+  font-family: CocogooseLetterPress, sans-serif;
   color: #ec5242;
 }
 
