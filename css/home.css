@@ -283,4 +283,30 @@ main {
   margin-left: 10px;
 }
 
+.main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-image: url("../assets/jpg/paul-volkmer-dark-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  color: #f8f8f8;
+  padding-block: 1.2em;
+}
+.main-program .articles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.main-program .program-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
 /*# sourceMappingURL=home.css.map */

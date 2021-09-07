@@ -79,4 +79,24 @@ main {
   }
 }
 
+.main-program {
+    @include flex-column(center, 1em);
+    background-image: url('../assets/jpg/paul-volkmer-dark-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: $home-main-bg;
+    padding-block: 1.2em;
+
+    .articles-container {
+        @include flex-column(center, 20px);
+    }
+
+    .program-item {
+        @include flex-row(center, 20px);
+        align-items: center;
+    }
+
+}
+
 @import "footer";
