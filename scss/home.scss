@@ -4,7 +4,7 @@
 @import "header";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +17,8 @@ body {
 main {
   padding-inline: 0;
 }
+
+// Main infos
 
 .main-info {
   @include flex-column(flex-start, 1em);
@@ -79,24 +81,102 @@ main {
   }
 }
 
+section .separator {
+  width: 10%;
+  align-self: center;
+  background-color: #e74c33;
+  height: 2px;
+  margin-block: -1em 0.7em;
+}
+
+// Main program
+
 .main-program {
-    @include flex-column(center, 1em);
-    background-image: url('../assets/jpg/paul-volkmer-dark-background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    color: $home-main-bg;
-    padding-block: 1.2em;
+  @include flex-column(center, 1em);
 
-    .articles-container {
-        @include flex-column(center, 20px);
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fd7373;
+  }
+
+  background-image: url('../assets/jpg/dark-gray-sand.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  color: $home-main-bg;
+  padding-block: 1.2em;
+
+  .section-title {
+    @include font-size-color($font-3, 18px, white);
+  }
+
+  .articles-container {
+    @include flex-column(center, 20px);
+  }
+
+  .program-item {
+    @include flex-row(center, 25px);
+
+    align-items: center;
+    padding: 12px 8px;
+    margin-inline: 5%;
+    background: #2b2929;
+    border: 2px solid #3c3f46;
+    opacity: 0.9;
+
+    .icon {
+      font-size: 2em;
     }
 
-    .program-item {
-        @include flex-row(center, 20px);
-        align-items: center;
+    .activity {
+      color: $primary-2;
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 100;
     }
 
+    .description {
+      color: #fff;
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+
+  .see-program {
+    display: none;
+  }
+
+  .enroll-btn {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    background: #e74c33;
+    color: #fff;
+    font-size: 1.2em;
+    margin-block: 1.3em 0.8em;
+    border: 1px solid $primary-1;
+    font-weight: 400;
+  }
+}
+
+/* ------------------------------------------
+  Media Query
+-------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  .enroll-btn {
+    display: none;
+  }
+
+  .see-program {
+    display: block;
+  }
 }
 
 @import "footer";

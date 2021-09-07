@@ -33,7 +33,7 @@ header {
 
 .header-mobile {
   @include flex-row(space-between, 0);
-  @include place-it(relative, 0, 0);
+  @include place-it(sticky, 0, 0);
 }
 
 .header-desktop {

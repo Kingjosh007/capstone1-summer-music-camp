@@ -8,10 +8,12 @@
   font-family: CocogooseLetterPress;
   src: url("../assets/fonts/cocogoose_letterpress/COCOGOOSELETTERPRESS-TRIAL.ttf");
 }
+
 @font-face {
   font-family: Cocogoose;
   src: url("../assets/fonts/cocogoose/Cocogoose_trial.ttf");
 }
+
 .unscrollable {
   height: 100%;
   overflow: hidden;
@@ -53,7 +55,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   gap: 0;
-  position: relative;
+  position: sticky;
   top: 0;
   left: 0;
 }
@@ -123,49 +125,59 @@ header {
     left: 100%;
     top: -200px;
   }
+
   25% {
     left: 90%;
     top: -180px;
   }
+
   50% {
     left: 60%;
     top: -140px;
   }
+
   75% {
     left: 30%;
     top: -70px;
   }
+
   100% {
     left: 0%;
     top: 0;
   }
 }
+
 @keyframes mobile-menu-animation-hide {
   0% {
     opacity: 1;
     left: 0%;
     top: 0;
   }
+
   25% {
     opacity: 0.75;
     left: 30%;
     top: -70px;
   }
+
   50% {
     opacity: 0.5;
     left: 60%;
     top: -140px;
   }
+
   75% {
     opacity: 0.25;
     left: 90%;
     top: -180px;
   }
+
   99% {
     opacity: 0;
     display: none;
   }
 }
+
 .mobile-menu {
   display: none;
 }
@@ -204,6 +216,7 @@ header {
     display: block;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -234,6 +247,7 @@ main {
   background-position: 15% 55%, 84% 15%, 23% 12%, 95% 48%, 95% 95%;
   background-size: 100px, 50px, 50px, 40px, 100px;
 }
+
 .main-info .pre-title {
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
@@ -241,17 +255,20 @@ main {
   margin-top: 3em;
   font-weight: 300;
 }
+
 .main-info .title {
   font-family: "CocogooseLetterPress", sans-serif;
   font-size: 2em;
   color: #ec5242;
   margin-top: -1em;
 }
+
 .main-info .title .year {
   font-family: "Cocogoose", sans-serif;
   font-size: 1em;
   color: #ec5242;
 }
+
 .main-info .post-title {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -264,6 +281,7 @@ main {
   opacity: 0.9;
   z-index: 80;
 }
+
 .main-info .dates {
   font-family: "Cocogoose", sans-serif;
   font-size: 1em;
@@ -274,6 +292,7 @@ main {
   transform: scale(1.4);
   margin-left: 20%;
 }
+
 .main-info .venue {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -283,30 +302,105 @@ main {
   margin-left: 10px;
 }
 
+section .separator {
+  width: 10%;
+  align-self: center;
+  background-color: #e74c33;
+  height: 2px;
+  margin-block: -1em 0.7em;
+}
+
 .main-program {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  background-image: url("../assets/jpg/paul-volkmer-dark-background.jpg");
+  position: relative;
+  background-image: url("../assets/jpg/dark-gray-sand.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   color: #f8f8f8;
   padding-block: 1.2em;
 }
+
+.main-program .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fd7373;
+}
+
+.main-program .section-title {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
 .main-program .articles-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+
 .main-program .program-item {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   align-items: center;
+  padding: 12px 8px;
+  margin-inline: 5%;
+  background: #2b2929;
+  border: 2px solid #3c3f46;
+  opacity: 0.9;
 }
 
-/*# sourceMappingURL=home.css.map */
+.main-program .program-item .icon {
+  font-size: 2em;
+}
+
+.main-program .program-item .activity {
+  color: #ec5242;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.main-program .program-item .description {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.main-program .see-program {
+  display: none;
+}
+
+.main-program .enroll-btn {
+  display: block;
+  cursor: pointer;
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+  background: #e74c33;
+  color: #fff;
+  font-size: 1.2em;
+  margin-block: 1.3em 0.8em;
+  border: 1px solid #272a31;
+  font-weight: 400;
+}
+
+/* ------------------------------------------
+  Media Query
+-------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  .enroll-btn {
+    display: none;
+  }
+
+  .see-program {
+    display: block;
+  }
+}
