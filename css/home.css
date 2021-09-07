@@ -370,6 +370,7 @@ section .separator {
   align-items: center;
   gap: 1em;
   margin-inline: 15px;
+  background-color: #f8f8f8;
 }
 .instructors .section-title {
   font-family: "Lato", sans-serif;
@@ -390,7 +391,7 @@ section .separator {
   gap: 7px;
 }
 .instructors .instructor img {
-  width: 100%;
+  width: 95%;
   height: auto;
 }
 .instructors .instructor .instructor-text {
@@ -398,7 +399,7 @@ section .separator {
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
-  justify-content: space-around;
+  justify-content: flex-start;
   font-family: "Lato", sans-serif;
 }
 .instructors .instructor .instructor-text .separator {
@@ -421,9 +422,28 @@ section .separator {
 }
 .instructors .instructor .instructor-text .instructor-description {
   color: #272a31;
-  font-style: 14px;
+  font-size: 14px;
   font-weight: 200;
   margin-top: -2%;
+}
+.instructors .show-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: #272a31;
+  margin-inline: 15px;
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  font-weight: 400;
+  background: #fff;
+  padding-block: 10px;
+}
+.instructors .show-more span {
+  color: #ec5242;
+  margin-left: 15px;
 }
 
 /* ------------------------------------------

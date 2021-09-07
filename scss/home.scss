@@ -168,64 +168,81 @@ section .separator {
 // Instructors
 
 .instructors {
+  @include flex-column(center, 1em);
+
+  margin-inline: 15px;
+  background-color: #f8f8f8;
+
+  .section-title {
+    @include font-size-color($font-3, 18px, $primary-1);
+
+    margin-top: 2em;
+  }
+
+  .instructors-container {
     @include flex-column(center, 1em);
+  }
+
+  .instructor {
+    @include flex-row(center, 7px);
+
+    img {
+      width: 95%;
+      height: auto;
+    }
+
+    .instructor-text {
+      @include flex-column(flex-start, 2px);
+
+      justify-content: flex-start;
+      font-family: $font-3;
+
+      .separator {
+        background-color: $primary-3;
+        align-self: flex-start;
+        margin-bottom: 10px;
+        width: 25%;
+      }
+
+      .instructor-name {
+        color: $primary-1;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .instructor-title {
+        color: $primary-2;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: -4%;
+      }
+
+      .instructor-description {
+        color: $primary-1;
+        font-size: 14px;
+        font-weight: 200;
+        margin-top: -2%;
+      }
+    }
+  }
+
+  .show-more {
+    @include flex-row(center, 0);
+    @include font-size-color($font-3, 15px, $primary-1);
 
     margin-inline: 15px;
+    width: 100%;
+    border: 1px solid $primary-3;
+    font-weight: 400;
+    background: #fff;
+    padding-block: 10px;
 
-    .section-title {
-        @include font-size-color($font-3, 18px, $primary-1);
-        margin-top: 2em;
+    span {
+        color: $primary-2;
+        margin-left: 15px;
     }
-
-    .instructors-container {
-        @include flex-column(center, 1em);
-    }
-
-    .instructor {
-        @include flex-row(center, 7px);
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        .instructor-text {
-            @include flex-column(flex-start, 2px);
-            justify-content: space-around;
-            font-family: $font-3;
-
-            .separator {
-                background-color: $primary-3;
-                align-self: flex-start;
-                margin-bottom: 10px;
-                width: 25%;
-            }
-
-            .instructor-name {
-                color: $primary-1;
-                font-size: 20px;
-                font-weight: 700;
-            }
-
-            .instructor-title {
-                color: $primary-2;
-                font-style: italic;
-                font-weight: 300;
-                font-size: 16px;
-                margin-top: -4%;
-
-            }
-
-            .instructor-description {
-                color: $primary-1;
-                font-style: 14px;
-                font-weight: 200;
-                margin-top: -2%;
-            }
-
-
-        }
-    }
+  }
 }
 
 /* ------------------------------------------
