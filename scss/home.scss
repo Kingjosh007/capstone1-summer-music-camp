@@ -1,9 +1,78 @@
 @import "resets";
 @import "fonts";
 @import "colors";
-@import "layout";
+@import "header";
 
-h1 {
-  font-family: $font-1;
-  color: $primary-2;
+body {
+  background: $home-main-bg;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
+
+main {
+  padding-inline: 0;
+}
+
+.main-info {
+  @include flex-column(flex-start, 1em);
+
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 3em;
+  padding-left: 5%;
+  background-image: url('../assets/svg/1480796300.svg'), url('../assets/svg/Drums-Silhouette-2.svg'), url('../assets/svg/Geometric-Heart-4.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll;
+  background-position: 25% 65%, 65% 22%, 80% 45%;
+  background-size: 160px, 50px, 60px;
+
+  .pre-title {
+    @include font-size-color($font-3, 14px, $primary-2);
+
+    margin-top: 3em;
+    font-weight: 300;
+  }
+
+  .title {
+    @include font-size-color($font-2, 3em, $primary-2);
+
+    .year {
+      @include font-size-color($font-1, 3em, $primary-2);
+    }
+
+    margin-top: -1.4em;
+  }
+
+  .post-title {
+    @include font-size-color($font-3, 12px, #222);
+
+    border: 3px solid #fff;
+    padding: 10px 15px;
+    background-color: $about-main-bg;
+    max-width: 90%;
+    margin: 0 2% 0 3%;
+    opacity: 0.9;
+    z-index: 80;
+  }
+
+  .dates {
+    @include font-size-color($font-1, 5em, $primary-1);
+
+    font-weight: 900;
+    line-height: 50px;
+    width: 90%;
+    transform: scale(1.4);
+    margin-left: 20%;
+  }
+
+  .venue {
+    @include font-size-color($font-3, 12px, #333);
+
+    font-weight: 600;
+    margin-top: -1.5em;
+    margin-left: 10px;
+  }
+}
+
+@import "footer";

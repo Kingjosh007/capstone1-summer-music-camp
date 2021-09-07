@@ -1,23 +1,5 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: CocogooseLetterPress;
-  src: url("../assets/fonts/cocogoose_letterpress/COCOGOOSELETTERPRESS-TRIAL.ttf");
-}
-
-@font-face {
-  font-family: Cocogoose;
-  src: url("../assets/fonts/cocogoose/Cocogoose_trial.ttf");
-}
-
-.unscrollable {
-  height: 100%;
-  overflow: hidden;
-}
+@import "colors";
+@import "layout";
 
 .header-mobile,
 .header-desktop {
@@ -25,13 +7,12 @@
   padding: 20px;
   padding-left: 40px;
   margin: 0 0 30px 0;
-  background: #fff;
+  background: $header-bg;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  @include place-it(fixed, 0, 0);
+
   width: 100%;
 }
 
@@ -41,23 +22,18 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("../assets/jpg/kyle-smith-music-camp.jpg");
+  background-image: url('../assets/jpg/kyle-smith-music-camp.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: 0 0;
   background-size: cover;
   opacity: 0.12;
-  background-color: #d3d3d3;
+  background-color: $primary-3;
 }
 
 .header-mobile {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
-  position: relative;
-  top: 0;
-  left: 0;
+  @include flex-row(space-between, 0);
+  @include place-it(relative, 0, 0);
 }
 
 .header-desktop {
@@ -66,10 +42,8 @@ header {
 
 /* Hamburger Icon */
 .hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
+  @include flex-column(center, 0.4rem);
+
   position: static;
   opacity: 1;
   height: 100%;
@@ -84,7 +58,7 @@ header {
   transition: all 0.4s linear;
   position: relative;
   transform-origin: 4px;
-  background-color: #545454;
+  background-color: $hamburger-color;
 }
 
 .hamburger-icon .top-bar {
@@ -189,7 +163,7 @@ header {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  background: #d3d3d3;
+  background: $primary-3;
   background-position: 0 55px, right bottom;
   padding-top: 20%;
   padding-inline: 2% 10%;
@@ -207,6 +181,7 @@ header {
 /* ------------------------------------------
   Media Query
 -------------------------------------------- */
+
 @media only screen and (min-width: 768px) {
   .header-mobile {
     display: none;
@@ -215,85 +190,4 @@ header {
   .header-desktop {
     display: block;
   }
-}
-
-body {
-  background: #f8f8f8;
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-main {
-  padding-inline: 0;
-}
-
-.main-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1em;
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 3em;
-  padding-left: 5%;
-  background-image: url("../assets/svg/1480796300.svg"), url("../assets/svg/Drums-Silhouette-2.svg"), url("../assets/svg/Geometric-Heart-4.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll;
-  background-position: 25% 65%, 65% 22%, 80% 45%;
-  background-size: 160px, 50px, 60px;
-}
-
-.main-info .pre-title {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  color: #ec5242;
-  margin-top: 3em;
-  font-weight: 300;
-}
-
-.main-info .title {
-  font-family: "CocogooseLetterPress", sans-serif;
-  font-size: 3em;
-  color: #ec5242;
-  margin-top: -1.4em;
-}
-
-.main-info .title .year {
-  font-family: "Cocogoose", sans-serif;
-  font-size: 3em;
-  color: #ec5242;
-}
-
-.main-info .post-title {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  color: #222;
-  border: 3px solid #fff;
-  padding: 10px 15px;
-  background-color: #f7f7f7;
-  max-width: 90%;
-  margin: 0 2% 0 3%;
-  opacity: 0.9;
-  z-index: 80;
-}
-
-.main-info .dates {
-  font-family: "Cocogoose", sans-serif;
-  font-size: 5em;
-  color: #272a31;
-  font-weight: 900;
-  line-height: 50px;
-  width: 90%;
-  transform: scale(1.4);
-  margin-left: 20%;
-}
-
-.main-info .venue {
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  color: #333;
-  font-weight: 600;
-  margin-top: -1.5em;
-  margin-left: 10px;
 }
