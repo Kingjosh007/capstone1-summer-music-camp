@@ -3,11 +3,15 @@
 @import "colors";
 @import "header";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   background: $home-main-bg;
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+  overflow-x: unset;
 }
 
 main {
@@ -21,33 +25,33 @@ main {
   padding-top: 5rem;
   padding-bottom: 3em;
   padding-left: 5%;
-  background-image: url('../assets/svg/1480796300.svg'), url('../assets/svg/Drums-Silhouette-2.svg'), url('../assets/svg/Geometric-Heart-4.svg');
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll;
-  background-position: 25% 65%, 65% 22%, 80% 45%;
-  background-size: 160px, 50px, 60px;
+  background-image: url('../assets/svg/1480796300.svg'), url('../assets/svg/piano-illustration.svg'), url('../assets/svg/Drums-Silhouette-2.svg'), url('../assets/svg/acoustic_guitar.svg'), url('../assets/svg/Geometric-Heart-4.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll, scroll, scroll;
+  background-position: 15% 55%, 84% 15%, 23% 12%, 95% 48%, 95% 95%;
+  background-size: 100px, 50px, 50px, 40px, 100px;
 
   .pre-title {
-    @include font-size-color($font-3, 14px, $primary-2);
+    @include font-size-color($font-3, 1.2em, $primary-2);
 
     margin-top: 3em;
     font-weight: 300;
   }
 
   .title {
-    @include font-size-color($font-2, 3em, $primary-2);
+    @include font-size-color($font-2, 2em, $primary-2);
 
     .year {
-      @include font-size-color($font-1, 3em, $primary-2);
+      @include font-size-color($font-1, 1em, $primary-2);
     }
 
-    margin-top: -1.4em;
+    margin-top: -1em;
   }
 
   .post-title {
-    @include font-size-color($font-3, 12px, #222);
+    @include font-size-color($font-3, 16px, #222);
 
-    border: 3px solid #fff;
+    border: 4px solid #fff;
     padding: 10px 15px;
     background-color: $about-main-bg;
     max-width: 90%;
@@ -57,7 +61,7 @@ main {
   }
 
   .dates {
-    @include font-size-color($font-1, 5em, $primary-1);
+    @include font-size-color($font-1, 1em, $primary-1);
 
     font-weight: 900;
     line-height: 50px;
@@ -67,10 +71,10 @@ main {
   }
 
   .venue {
-    @include font-size-color($font-3, 12px, #333);
+    @include font-size-color($font-3, 14px, #555);
 
     font-weight: 600;
-    margin-top: -1.5em;
+    margin-top: -1.7em;
     margin-left: 10px;
   }
 }
