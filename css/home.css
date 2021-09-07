@@ -8,12 +8,10 @@
   font-family: CocogooseLetterPress;
   src: url("../assets/fonts/cocogoose_letterpress/COCOGOOSELETTERPRESS-TRIAL.ttf");
 }
-
 @font-face {
   font-family: Cocogoose;
   src: url("../assets/fonts/cocogoose/Cocogoose_trial.ttf");
 }
-
 .unscrollable {
   height: 100%;
   overflow: hidden;
@@ -125,59 +123,49 @@ header {
     left: 100%;
     top: -200px;
   }
-
   25% {
     left: 90%;
     top: -180px;
   }
-
   50% {
     left: 60%;
     top: -140px;
   }
-
   75% {
     left: 30%;
     top: -70px;
   }
-
   100% {
     left: 0%;
     top: 0;
   }
 }
-
 @keyframes mobile-menu-animation-hide {
   0% {
     opacity: 1;
     left: 0%;
     top: 0;
   }
-
   25% {
     opacity: 0.75;
     left: 30%;
     top: -70px;
   }
-
   50% {
     opacity: 0.5;
     left: 60%;
     top: -140px;
   }
-
   75% {
     opacity: 0.25;
     left: 90%;
     top: -180px;
   }
-
   99% {
     opacity: 0;
     display: none;
   }
 }
-
 .mobile-menu {
   display: none;
 }
@@ -216,7 +204,6 @@ header {
     display: block;
   }
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -247,7 +234,6 @@ main {
   background-position: 15% 55%, 84% 15%, 23% 12%, 95% 48%, 95% 95%;
   background-size: 100px, 50px, 50px, 40px, 100px;
 }
-
 .main-info .pre-title {
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
@@ -255,20 +241,17 @@ main {
   margin-top: 3em;
   font-weight: 300;
 }
-
 .main-info .title {
   font-family: "CocogooseLetterPress", sans-serif;
   font-size: 2em;
   color: #ec5242;
   margin-top: -1em;
 }
-
 .main-info .title .year {
   font-family: "Cocogoose", sans-serif;
   font-size: 1em;
   color: #ec5242;
 }
-
 .main-info .post-title {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -281,7 +264,6 @@ main {
   opacity: 0.9;
   z-index: 80;
 }
-
 .main-info .dates {
   font-family: "Cocogoose", sans-serif;
   font-size: 1em;
@@ -292,7 +274,6 @@ main {
   transform: scale(1.4);
   margin-left: 20%;
 }
-
 .main-info .venue {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -323,27 +304,23 @@ section .separator {
   color: #f8f8f8;
   padding-block: 1.2em;
 }
-
 .main-program .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background: #fd7373;
 }
-
 .main-program .section-title {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: white;
 }
-
 .main-program .articles-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-
 .main-program .program-item {
   display: flex;
   flex-direction: row;
@@ -356,28 +333,23 @@ section .separator {
   border: 2px solid #3c3f46;
   opacity: 0.9;
 }
-
 .main-program .program-item .icon {
-  font-size: 2em;
+  font-size: 1.7em;
 }
-
 .main-program .program-item .activity {
   color: #ec5242;
   font-size: 18px;
   font-weight: bold;
   z-index: 100;
 }
-
 .main-program .program-item .description {
   color: #fff;
   font-size: 16px;
   text-align: left;
 }
-
 .main-program .see-program {
   display: none;
 }
-
 .main-program .enroll-btn {
   display: block;
   cursor: pointer;
@@ -392,6 +364,68 @@ section .separator {
   font-weight: 400;
 }
 
+.instructors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-inline: 15px;
+}
+.instructors .section-title {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #272a31;
+  margin-top: 2em;
+}
+.instructors .instructors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.instructors .instructor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7px;
+}
+.instructors .instructor img {
+  width: 100%;
+  height: auto;
+}
+.instructors .instructor .instructor-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  justify-content: space-around;
+  font-family: "Lato", sans-serif;
+}
+.instructors .instructor .instructor-text .separator {
+  background-color: #d3d3d3;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  width: 25%;
+}
+.instructors .instructor .instructor-text .instructor-name {
+  color: #272a31;
+  font-size: 20px;
+  font-weight: 700;
+}
+.instructors .instructor .instructor-text .instructor-title {
+  color: #ec5242;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: -4%;
+}
+.instructors .instructor .instructor-text .instructor-description {
+  color: #272a31;
+  font-style: 14px;
+  font-weight: 200;
+  margin-top: -2%;
+}
+
 /* ------------------------------------------
   Media Query
 -------------------------------------------- */
@@ -404,3 +438,5 @@ section .separator {
     display: block;
   }
 }
+
+/*# sourceMappingURL=home.css.map */

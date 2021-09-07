@@ -129,7 +129,7 @@ section .separator {
     opacity: 0.9;
 
     .icon {
-      font-size: 2em;
+      font-size: 1.7em;
     }
 
     .activity {
@@ -163,6 +163,69 @@ section .separator {
     border: 1px solid $primary-1;
     font-weight: 400;
   }
+}
+
+// Instructors
+
+.instructors {
+    @include flex-column(center, 1em);
+
+    margin-inline: 15px;
+
+    .section-title {
+        @include font-size-color($font-3, 18px, $primary-1);
+        margin-top: 2em;
+    }
+
+    .instructors-container {
+        @include flex-column(center, 1em);
+    }
+
+    .instructor {
+        @include flex-row(center, 7px);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .instructor-text {
+            @include flex-column(flex-start, 2px);
+            justify-content: space-around;
+            font-family: $font-3;
+
+            .separator {
+                background-color: $primary-3;
+                align-self: flex-start;
+                margin-bottom: 10px;
+                width: 25%;
+            }
+
+            .instructor-name {
+                color: $primary-1;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .instructor-title {
+                color: $primary-2;
+                font-style: italic;
+                font-weight: 300;
+                font-size: 16px;
+                margin-top: -4%;
+
+            }
+
+            .instructor-description {
+                color: $primary-1;
+                font-style: 14px;
+                font-weight: 200;
+                margin-top: -2%;
+            }
+
+
+        }
+    }
 }
 
 /* ------------------------------------------
