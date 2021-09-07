@@ -172,6 +172,7 @@ section .separator {
 
   margin-inline: 15px;
   background-color: #f8f8f8;
+  padding-bottom: 1em;
 
   .section-title {
     @include font-size-color($font-3, 18px, $primary-1);
@@ -243,6 +244,31 @@ section .separator {
         margin-left: 15px;
     }
   }
+}
+
+.partners {
+    @include flex-column(center, 1em);
+    background: #414246;
+    color: #fcfcfc;
+    padding-inline: 1em;
+    padding-bottom: 1em;
+
+    .section-title {
+        @include font-size-color($font-3, 18px, white);
+        margin-bottom: 8px;
+      }
+
+    .partners-container {
+        @include flex-row(space-around, 1%);
+        flex-wrap: wrap;
+        
+        img {
+            width: 30%;
+            height: auto;
+            filter: grayscale(90%);
+        }
+    }
+
 }
 
 /* ------------------------------------------

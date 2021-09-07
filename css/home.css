@@ -371,6 +371,7 @@ section .separator {
   gap: 1em;
   margin-inline: 15px;
   background-color: #f8f8f8;
+  padding-bottom: 1em;
 }
 .instructors .section-title {
   font-family: "Lato", sans-serif;
@@ -446,6 +447,35 @@ section .separator {
   margin-left: 15px;
 }
 
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background: #414246;
+  color: #fcfcfc;
+  padding-inline: 1em;
+  padding-bottom: 1em;
+}
+.partners .section-title {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 8px;
+}
+.partners .partners-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+.partners .partners-container img {
+  width: 30%;
+  height: auto;
+  filter: grayscale(90%);
+}
+
 /* ------------------------------------------
   Media Query
 -------------------------------------------- */
@@ -457,6 +487,12 @@ section .separator {
   .see-program {
     display: block;
   }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=home.css.map */
