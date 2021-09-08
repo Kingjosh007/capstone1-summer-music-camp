@@ -29,6 +29,8 @@ header {
   position: relative;
   top: 0;
   left: 0;
+  background: #f8f8f8;
+  z-index: 2000;
   width: 100vw;
 }
 
@@ -226,6 +228,8 @@ header {
     flex-direction: row;
     justify-content: center;
     gap: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0 2px 2px 2px gray;
   }
   .header-desktop .desktop-menu {
     display: flex;
@@ -385,7 +389,7 @@ main {
   font-weight: 600;
   margin-top: -1.7em;
   margin-left: 10px;
-  z-index: 10000;
+  z-index: 1000;
 }
 .main-info .venue:hover {
   cursor: pointer;
@@ -544,14 +548,14 @@ section .separator {
   justify-content: center;
   gap: 0;
   font-family: "Lato", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   color: #272a31;
   margin-inline: 15px;
   width: 100%;
   border: 1px solid #d3d3d3;
   font-weight: 400;
   background: #fff;
-  padding-block: 10px;
+  padding-block: 15px;
 }
 .instructors .show-more span {
   color: #ec5242;
@@ -629,7 +633,7 @@ section .separator {
     background-image: url("../assets/svg/1480796300.svg"), url("../assets/svg/piano-illustration.svg"), url("../assets/svg/Drums-Silhouette-2.svg"), url("../assets/svg/acoustic_guitar.svg"), url("../assets/svg/Geometric-Heart-4.svg"), url("../assets/svg/Anonymous_funny_music_note.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-attachment: scroll, scroll, scroll, scroll, scroll, scroll;
-    background-position: 30% 65%, 60% 15%, 45% 5%, 60% 48%, 65% 95%, 90% 50%;
+    background-position: 30% 65%, 60% 15%, 45% 10%, 60% 48%, 65% 95%, 90% 50%;
     background-size: 100px, 50px, 50px, 40px, 100px, 150px;
   }
   .main-info .pre-title {

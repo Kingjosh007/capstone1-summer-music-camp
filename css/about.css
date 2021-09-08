@@ -34,6 +34,8 @@ header {
   position: relative;
   top: 0;
   left: 0;
+  background: #f8f8f8;
+  z-index: 2000;
   width: 100vw;
 }
 
@@ -231,6 +233,8 @@ header {
     flex-direction: row;
     justify-content: center;
     gap: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0 2px 2px 2px gray;
   }
   .header-desktop .desktop-menu {
     display: flex;
@@ -303,7 +307,7 @@ section .separator {
   background-image: url("../assets/svg/1480796300.svg"), url("../assets/svg/piano-illustration.svg"), url("../assets/svg/Drums-Silhouette-2.svg"), url("../assets/svg/Geometric-Heart-4.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-attachment: scroll, scroll, scroll, scroll, scroll;
-  background-position: 95% 90%, 89% 10%, 28% 7%, 50% 60%;
+  background-position: 95% 90%, 89% 10%, 28% 7%, 50% 45%;
   background-size: 100px, 50px, 50px, 200px;
 }
 .main-info .pre-title {
@@ -361,29 +365,6 @@ section .separator {
 .main-info .contact-area .contact-email a {
   color: #141313;
 }
-.main-info .dates {
-  font-family: "Cocogoose", sans-serif;
-  font-size: 1em;
-  color: #272a31;
-  font-weight: 900;
-  line-height: 50px;
-  width: 90%;
-  transform: scale(1.4);
-  margin-left: 20%;
-}
-.main-info .venue {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  color: #555;
-  font-weight: 600;
-  margin-top: -1.7em;
-  margin-left: 10px;
-  z-index: 10000;
-}
-.main-info .venue:hover {
-  cursor: pointer;
-  color: #ec5242;
-}
 
 .logo-section {
   display: flex;
@@ -405,17 +386,20 @@ section .separator {
 .logo-section .logo-text-desktop {
   display: none;
 }
+.logo-section .logo-text-mobile {
+  display: block;
+}
 .logo-section .logo-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 15px;
-  padding: 10px;
-  border: 1px solid gray;
 }
 .logo-section .logo-container img {
   width: 70%;
   height: auto;
+  padding: 10px;
+  border: 1px solid gray;
 }
 
 .full-separator {
@@ -539,6 +523,192 @@ section .separator {
 
   .see-program {
     display: block;
+  }
+
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+    margin-top: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 3em;
+    border-bottom: 1px solid gray;
+    background-image: url("../assets/svg/1480796300.svg"), url("../assets/svg/piano-illustration.svg"), url("../assets/svg/Drums-Silhouette-2.svg"), url("../assets/svg/Geometric-Heart-4.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll, scroll, scroll;
+    background-position: 82% 90%, 89% 20%, 18% 20%, 50% 37%;
+    background-size: 100px, 50px, 50px, 200px;
+  }
+  .main-info .pre-title {
+    display: none;
+  }
+  .main-info .title {
+    font-family: "CocogooseLetterPress", sans-serif;
+    font-size: 3em;
+    color: #ec5242;
+    width: 60%;
+    margin-left: 11%;
+    margin-top: -1em;
+  }
+  .main-info .title .year {
+    font-family: "Cocogoose", sans-serif;
+    font-size: 1em;
+    color: #ec5242;
+  }
+  .main-info .post-title {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    background-color: white;
+    max-width: 65%;
+    margin: -2% 2% 0 2%;
+    opacity: 0.9;
+    z-index: 1000;
+  }
+  .main-info .post-title .post-title-desktop {
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+  .main-info .post-title .post-title-mobile {
+    display: none;
+  }
+  .main-info .contact-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    color: #272a31;
+    width: 60%;
+  }
+  .main-info .contact-area .contact-email {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: -10px;
+  }
+  .main-info .contact-area .contact-email a {
+    color: #141313;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    color: #272a31;
+    background: white;
+    padding-inline: 5%;
+    padding-bottom: 2em;
+  }
+  .logo-section .section-title {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #272a31;
+  }
+  .logo-section .logo-text-mobile {
+    display: none;
+  }
+  .logo-section .logo-text-desktop {
+    display: block;
+  }
+  .logo-section .logo-text-desktop a {
+    text-decoration: none;
+    color: #ec5242;
+  }
+  .logo-section .logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+  .logo-section .logo-container img {
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid gray;
+  }
+
+  .past-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 3em;
+    width: 100%;
+    background-color: white;
+  }
+  .past-events .section-title {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #272a31;
+  }
+  .past-events p {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    color: #272a31;
+    text-align: center;
+  }
+  .past-events .past-images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-inline: 3vw;
+  }
+  .past-events .past-images-container .past-event {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    color: white;
+    position: relative;
+  }
+  .past-events .past-images-container .past-event .pe-overlay {
+    position: absolute;
+    top: 0;
+    left: 6.8vw;
+    width: 70%;
+    height: 100%;
+    background: #ec5242;
+    z-index: 5000;
+    opacity: 0.7;
+  }
+  .past-events .past-images-container .past-event img {
+    width: 70%;
+  }
+  .past-events .past-images-container .past-event .pe-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 10000;
+  }
+  .past-events .past-images-container .past-event .pe-text .year {
+    font-size: 45px;
   }
 
   .partners {
