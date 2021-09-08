@@ -1,0 +1,21 @@
+@import "resets";
+@import "fonts";
+@import "colors";
+@import "header";
+
+
+/* ------------------------------------------
+  Media Query
+-------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+    .enroll-btn {
+      display: none;
+    }
+  
+    .see-program {
+      display: block;
+    }
+  }
+  
+  @import "footer";

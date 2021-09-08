@@ -19,15 +19,14 @@
 
 .header-mobile,
 .header-desktop {
-  max-width: 100vw;
+  width: 100%;
   padding: 20px;
   padding-left: 40px;
-  margin: 0 0 30px 0;
-  background: #fff;
+  margin: 0;
 }
 
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
@@ -39,6 +38,7 @@ header {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 1000;
   background-image: url("../assets/jpg/kyle-smith-music-camp.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -53,7 +53,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   gap: 0;
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
 }
@@ -71,7 +71,7 @@ header {
   position: static;
   opacity: 1;
   height: 100%;
-  z-index: 10;
+  z-index: 50000;
 }
 
 .hamburger-icon .top-bar,
@@ -81,7 +81,7 @@ header {
   height: 0.4rem;
   transition: all 0.4s linear;
   position: relative;
-  transform-origin: 4px;
+  transform-origin: 0.45px;
   background-color: #545454;
 }
 
@@ -96,12 +96,6 @@ header {
 
 .hamburger-icon .bottom-bar {
   transform: rotate(0);
-}
-
-.hamburger-icon.open {
-  position: fixed;
-  right: 20px;
-  top: 25px;
 }
 
 .hamburger-icon.open .top-bar {
@@ -120,19 +114,19 @@ header {
 /* Mobile menu */
 @keyframes mobile-menu-animation-show {
   0% {
-    left: 100%;
+    left: -60%;
     top: -200px;
   }
   25% {
-    left: 90%;
+    left: -40%;
     top: -180px;
   }
   50% {
-    left: 60%;
+    left: -25%;
     top: -140px;
   }
   75% {
-    left: 30%;
+    left: -10%;
     top: -70px;
   }
   100% {
@@ -171,25 +165,48 @@ header {
 }
 
 .mobile-menu.show {
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
-  background: #d3d3d3;
-  background-position: 0 55px, right bottom;
+  z-index: 10000;
+  background: #f8f8f8;
   padding-top: 20%;
   padding-inline: 2% 10%;
   animation-name: mobile-menu-animation-show;
   animation-duration: 0.2s;
 }
 
+.mobile-menu.show ul,
+.mobile-menu.hide ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  font-family: "Cocogoose", sans-serif;
+}
+
+.mobile-menu.show ul a,
+.mobile-menu.hide ul a {
+  text-decoration: none;
+  color: #ec5242;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
 .mobile-menu.hide {
-  background-color: #191765;
-  position: absolute;
+  background-color: white;
   animation-name: mobile-menu-animation-hide;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
 }
 
 /* ------------------------------------------
@@ -225,6 +242,7 @@ main {
   align-items: flex-start;
   gap: 1em;
   position: relative;
+  margin-top: -2rem;
   padding-top: 5rem;
   padding-bottom: 3em;
   padding-left: 5%;
@@ -308,7 +326,7 @@ section .separator {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #fd7373;
+  background: #ce90ce;
 }
 .main-program .section-title {
   font-family: "Lato", sans-serif;
