@@ -12,6 +12,7 @@ function handleViewMore(isM) {
         document.querySelector('.see-program').style.display = 'none';
         document.querySelector('.partners').style.display = 'none';
         document.querySelector('footer').style.display = 'none';
+        showMoreBtn.style.display = 'flex';
         instructorsContainer.innerHTML = codeForInstructors(instructors.slice(0, 2));
         showMoreBtn.addEventListener('click', () => {
             spinner.style.display = 'block';
@@ -33,6 +34,7 @@ function handleViewMore(isM) {
         document.querySelector('.see-program').style.display = 'block';
         document.querySelector('.partners').style.display = 'block';
         document.querySelector('footer').style.display = 'block';
+        instructorsContainer.innerHTML = codeForInstructors(instructors);
     }
     
 }

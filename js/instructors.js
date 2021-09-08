@@ -29,7 +29,7 @@ let instructors = [
     },
     {
         id: 5,
-        name: "Hans SomeName",
+        name: "Hans Somename",
         title: "\"Piano Master\"",
         description: "Est perspiciatis perferendis impedit quo. Libero, iusto. Eveniet, ipsa",
         image: "images/instructors/instructor5.jpg"

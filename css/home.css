@@ -433,6 +433,7 @@ section .separator {
   align-items: center;
   padding: 12px 8px;
   margin-inline: 5%;
+  width: 90%;
   background: #2b2929;
   border: 2px solid #3c3f46;
   opacity: 0.9;
@@ -443,6 +444,7 @@ section .separator {
 .main-program .program-item .activity {
   color: #ec5242;
   font-size: 18px;
+  width: 15ch;
   font-weight: bold;
   z-index: 100;
 }
@@ -721,6 +723,51 @@ section .separator {
   }
   .main-program .program-item:hover {
     border: 5px solid #f8f8f8;
+  }
+
+  .instructors .section-title {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #272a31;
+    margin-top: 2em;
+  }
+  .instructors .instructors-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 1em;
+  }
+  .instructors .instructors-container .instructor {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+  .instructors .instructors-container .instructor img {
+    width: 60%;
+    height: auto;
+  }
+  .instructors .instructors-container .instructor .instructor-text {
+    margin-left: -30%;
+    margin-top: -10px;
+  }
+  .instructors .instructors-container .instructor .instructor-text .separator {
+    background-color: #d3d3d3;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    width: 25%;
+  }
+  .instructors .instructors-container .instructor .instructor-text .instructor-name {
+    font-size: 16px;
+  }
+  .instructors .instructors-container .instructor .instructor-text .instructor-title {
+    font-size: 13px;
+  }
+  .instructors .instructors-container .instructor .instructor-text .instructor-description {
+    font-size: 12px;
   }
 }
 footer {

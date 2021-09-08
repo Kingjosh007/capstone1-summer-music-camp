@@ -126,6 +126,7 @@ section .separator {
     align-items: center;
     padding: 12px 8px;
     margin-inline: 5%;
+    width: 90%;
     background: #2b2929;
     border: 2px solid #3c3f46;
     opacity: 0.9;
@@ -137,6 +138,7 @@ section .separator {
     .activity {
       color: $primary-2;
       font-size: 18px;
+      width: 15ch;
       font-weight: bold;
       z-index: 100;
     }
@@ -425,6 +427,62 @@ section .separator {
       }
     }
   }
+
+  .instructors {
+    .section-title {
+        @include font-size-color($font-3, 25px, $primary-1);
+    
+        margin-top: 2em;
+      }
+
+      .instructors-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10%;
+        margin-top: 1em;
+
+        .instructor {
+            width: 35%;
+            @include flex-row(center, 0);
+
+            img {
+                width: 60%;
+                height: auto;
+              }
+
+            .instructor-text {
+                margin-left: -30%;
+                margin-top: -10px;
+
+                .separator {
+                    background-color: $primary-3;
+                    align-self: flex-start;
+                    margin-bottom: 10px;
+                    width: 25%;
+                  }
+            
+                  .instructor-name {
+                    font-size: 16px;
+                  }
+            
+                  .instructor-title {
+                    font-size: 13px;
+                  }
+            
+                  .instructor-description {
+                    font-size: 12px;
+                  }
+
+            }
+
+      }
+    }
+
+  }
+
+
 }
 
 @import "footer";
