@@ -59,6 +59,8 @@ Give a ⭐️ if you like this project!
 
 - Heartfelt thanks to [Microverse](https://www.microverse.org/)
 - Hat tip to [Cindy Shin](https://www.behance.net/adagio07) for this awesome design we owe her. 
+- Thank you to [Icon Collective](https://iconcollective.edu/) whose logo was used. I do not own it.
+- Thank you to [Kyle Smith](https://unsplash.com/@kymasm) whose image was downloaded from Unsplash.
 
 ## 📝 License
 
