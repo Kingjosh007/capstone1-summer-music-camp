@@ -238,7 +238,7 @@ header {
   }
   .header-desktop .desktop-menu .logo-container img {
     position: absolute;
-    left: 20%;
+    left: 15%;
     top: 10%;
     width: auto;
     height: 50px;
@@ -595,6 +595,132 @@ section .separator {
 
   .see-program {
     display: block;
+    margin-block: 1.5em;
+    z-index: 10000;
+  }
+  .see-program a {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #f8f8f8;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .see-program a:hover {
+    color: #ec5242;
+  }
+
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    position: relative;
+    margin-top: -2rem;
+    padding-top: 5rem;
+    padding-bottom: 3em;
+    padding-left: 15%;
+    background-image: url("../assets/svg/1480796300.svg"), url("../assets/svg/piano-illustration.svg"), url("../assets/svg/Drums-Silhouette-2.svg"), url("../assets/svg/acoustic_guitar.svg"), url("../assets/svg/Geometric-Heart-4.svg"), url("../assets/svg/Anonymous_funny_music_note.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll, scroll, scroll, scroll;
+    background-position: 30% 65%, 60% 15%, 45% 5%, 60% 48%, 65% 95%, 90% 50%;
+    background-size: 100px, 50px, 50px, 40px, 100px, 150px;
+  }
+  .main-info .pre-title {
+    font-family: "Lato", sans-serif;
+    font-size: 2.5em;
+    color: #ec5242;
+    margin-top: 0;
+    font-weight: 300;
+  }
+  .main-info .title {
+    font-family: "CocogooseLetterPress", sans-serif;
+    font-size: 3em;
+    color: #ec5242;
+    width: 80%;
+    margin-top: -1em;
+  }
+  .main-info .title .year {
+    font-family: "Cocogoose", sans-serif;
+    font-size: 1em;
+    color: #ec5242;
+  }
+  .main-info .post-title {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #222;
+    border: 4px solid #fff;
+    padding: 10px 15px;
+    background-color: #f7f7f7;
+    max-width: 70%;
+    margin: 1% 2% 0 0;
+    opacity: 0.9;
+    z-index: 20000;
+  }
+  .main-info .dates {
+    font-family: "Cocogoose", sans-serif;
+    font-size: 1.5em;
+    color: #272a31;
+    font-weight: 900;
+    line-height: 50px;
+    width: 90%;
+    transform: scale(1.4);
+    margin-left: 18%;
+  }
+  .main-info .venue {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    color: #555;
+    font-weight: 600;
+    margin-top: -0.7em;
+  }
+
+  section .separator {
+    width: 5%;
+  }
+
+  .main-program .section-title {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: white;
+  }
+  .main-program .articles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1px;
+    margin-inline: 3em;
+  }
+  .main-program .program-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    align-items: center;
+    padding: 12px 8px;
+    cursor: pointer;
+    margin-inline: 2px;
+    background: #2b2929;
+    border: 2px solid #3c3f46;
+    height: 200px;
+    z-index: 1000;
+  }
+  .main-program .program-item .icon {
+    font-size: 1.8em;
+  }
+  .main-program .program-item .activity {
+    color: #ec5242;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 100;
+  }
+  .main-program .program-item .description {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+  .main-program .program-item:hover {
+    border: 5px solid #f8f8f8;
   }
 }
 footer {

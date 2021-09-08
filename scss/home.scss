@@ -242,41 +242,44 @@ section .separator {
     padding-block: 10px;
 
     span {
-        color: $primary-2;
-        margin-left: 15px;
+      color: $primary-2;
+      margin-left: 15px;
     }
   }
 }
 
 .partners {
-    @include flex-column(center, 1em);
-    background: rgb(83,71,71);
-background: linear-gradient(90deg, rgba(83,71,71,1) 0%, rgb(122, 114, 106) 78%);
-    color: #fcfcfc;
-    padding-inline: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
+  @include flex-column(center, 1em);
 
-    .section-title {
-        @include font-size-color($font-3, 18px, white);
-        margin-bottom: 8px;
+  background: rgb(83, 71, 71);
+  background: linear-gradient(90deg, rgba(83, 71, 71, 1) 0%, rgb(122, 114, 106) 78%);
+  color: #fcfcfc;
+  padding-inline: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+
+  .section-title {
+    @include font-size-color($font-3, 18px, white);
+
+    margin-bottom: 8px;
+  }
+
+  .partners-container {
+    @include flex-row(space-around, 1%);
+
+    flex-wrap: wrap;
+
+    img {
+      width: 30%;
+      height: auto;
+      filter: grayscale(95%);
+
+      &:last-child,
+      &:first-child {
+        filter: grayscale(60%);
       }
-
-    .partners-container {
-        @include flex-row(space-around, 1%);
-        flex-wrap: wrap;
-        
-        img {
-            width: 30%;
-            height: auto;
-            filter: grayscale(95%);
-
-            &:last-child, &:first-child {
-                filter: grayscale(60%);
-            }
-        }
     }
-
+  }
 }
 
 /* ------------------------------------------
@@ -290,6 +293,137 @@ background: linear-gradient(90deg, rgba(83,71,71,1) 0%, rgb(122, 114, 106) 78%);
 
   .see-program {
     display: block;
+    margin-block: 1.5em;
+    z-index: 10000;
+
+    a {
+        @include font-size-color($font-3, 16px, $home-main-bg);
+
+        font-weight: bold;
+        cursor: pointer;
+        
+
+        &:hover {
+            color: $primary-2;
+        }
+    }
+    
+  }
+
+  // Main infos
+
+  .main-info {
+    @include flex-column(flex-start, 1em);
+
+    position: relative;
+    margin-top: -2rem;
+    padding-top: 5rem;
+    padding-bottom: 3em;
+    padding-left: 15%;
+    background-image: url('../assets/svg/1480796300.svg'), url('../assets/svg/piano-illustration.svg'), url('../assets/svg/Drums-Silhouette-2.svg'), url('../assets/svg/acoustic_guitar.svg'), url('../assets/svg/Geometric-Heart-4.svg'), url('../assets/svg/Anonymous_funny_music_note.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll, scroll, scroll, scroll;
+    background-position: 30% 65%, 60% 15%, 45% 5%, 60% 48%, 65% 95%, 90% 50%;
+    background-size: 100px, 50px, 50px, 40px, 100px, 150px;
+
+    .pre-title {
+      @include font-size-color($font-3, 2.5em, $primary-2);
+
+      margin-top: 0;
+      font-weight: 300;
+    }
+
+    .title {
+      @include font-size-color($font-2, 3em, $primary-2);
+
+      width: 80%;
+
+      .year {
+        @include font-size-color($font-1, 1em, $primary-2);
+      }
+
+      margin-top: -1em;
+    }
+
+    .post-title {
+      @include font-size-color($font-3, 16px, #222);
+
+      border: 4px solid #fff;
+      padding: 10px 15px;
+      background-color: $about-main-bg;
+      max-width: 70%;
+      margin: 1% 2% 0 0;
+      opacity: 0.9;
+      z-index: 20000;
+    }
+
+    .dates {
+      @include font-size-color($font-1, 1.5em, $primary-1);
+
+      font-weight: 900;
+      line-height: 50px;
+      width: 90%;
+      transform: scale(1.4);
+      margin-left: 18%;
+    }
+
+    .venue {
+      @include font-size-color($font-3, 1em, #555);
+
+      font-weight: 600;
+      margin-top: -0.7em;
+    }
+  }
+
+  section .separator {
+    width: 5%;
+  }
+
+  .main-program {
+    .section-title {
+      @include font-size-color($font-3, 25px, white);
+    }
+
+    .articles-container {
+      @include flex-row(center, 1px);
+
+      margin-inline: 3em;
+    }
+
+    .program-item {
+      @include flex-column(center, 5px);
+
+      align-items: center;
+      padding: 12px 8px;
+      cursor: pointer;
+      margin-inline: 2px;
+      background: #2b2929;
+      border: 2px solid #3c3f46;
+      height: 200px;
+      z-index: 1000;
+
+      .icon {
+        font-size: 1.8em;
+      }
+
+      .activity {
+        color: $primary-2;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        z-index: 100;
+      }
+
+      .description {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      &:hover {
+        border: 5px solid $home-main-bg;
+      }
+    }
   }
 }
 

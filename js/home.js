@@ -8,6 +8,8 @@ function handleViewMore(isM) {
     spinner.style.display = 'none';
     if(isM.matches)
     {
+        document.querySelector('.enroll-btn').style.display = 'block';
+        document.querySelector('.see-program').style.display = 'none';
         document.querySelector('.partners').style.display = 'none';
         document.querySelector('footer').style.display = 'none';
         instructorsContainer.innerHTML = codeForInstructors(instructors.slice(0, 2));
@@ -26,7 +28,11 @@ function handleViewMore(isM) {
     }
     else  
     {
-
+        showMoreBtn.style.display = 'none';
+        document.querySelector('.enroll-btn').style.display = 'none';
+        document.querySelector('.see-program').style.display = 'block';
+        document.querySelector('.partners').style.display = 'block';
+        document.querySelector('footer').style.display = 'block';
     }
     
 }
