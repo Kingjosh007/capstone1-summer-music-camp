@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 *,
 *::before,
 *::after {
@@ -8,13 +10,10 @@
   font-family: CocogooseLetterPress;
   src: url("../assets/fonts/cocogoose_letterpress/COCOGOOSELETTERPRESS-TRIAL.ttf");
 }
+
 @font-face {
   font-family: Cocogoose;
   src: url("../assets/fonts/cocogoose/Cocogoose_trial.ttf");
-}
-.unscrollable {
-  height: 100%;
-  overflow: hidden;
 }
 
 .unscrollable {
@@ -124,49 +123,59 @@ header {
     left: -60%;
     top: -200px;
   }
+
   25% {
     left: -40%;
     top: -180px;
   }
+
   50% {
     left: -25%;
     top: -140px;
   }
+
   75% {
     left: -10%;
     top: -70px;
   }
+
   100% {
     left: 0%;
     top: 0;
   }
 }
+
 @keyframes mobile-menu-animation-hide {
   0% {
     opacity: 1;
     left: 0%;
     top: 0;
   }
+
   25% {
     opacity: 0.75;
     left: 30%;
     top: -70px;
   }
+
   50% {
     opacity: 0.5;
     left: 60%;
     top: -140px;
   }
+
   75% {
     opacity: 0.25;
     left: 90%;
     top: -180px;
   }
+
   99% {
     opacity: 0;
     display: none;
   }
 }
+
 .mobile-menu {
   display: none;
 }
@@ -232,19 +241,22 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0px;
-    padding-bottom: 0px;
+    gap: 0;
+    padding-bottom: 0;
     box-shadow: 0 2px 2px 2px gray;
   }
+
   .header-desktop .desktop-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0px;
+    gap: 0;
   }
+
   .header-desktop .desktop-menu .logo-container {
     width: 10%;
   }
+
   .header-desktop .desktop-menu .logo-container img {
     position: absolute;
     left: 15%;
@@ -252,6 +264,7 @@ header {
     width: auto;
     height: 50px;
   }
+
   .header-desktop .desktop-menu ul {
     display: flex;
     flex-direction: row;
@@ -260,6 +273,7 @@ header {
     margin-left: 40vw;
     margin-top: -2px;
   }
+
   .header-desktop .desktop-menu ul .links-container a {
     font-family: "Lato", sans-serif;
     font-size: 18px;
@@ -267,10 +281,12 @@ header {
     font-weight: 600;
     text-decoration: none;
   }
+
   .header-desktop .desktop-menu ul .links-container a.active {
     color: #ec5242;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -310,6 +326,7 @@ section .separator {
   background-position: 95% 90%, 89% 10%, 28% 7%, 50% 45%;
   background-size: 100px, 50px, 50px, 200px;
 }
+
 .main-info .pre-title {
   font-family: "Lato", sans-serif;
   font-size: 1.7em;
@@ -317,6 +334,7 @@ section .separator {
   margin-top: 1em;
   font-weight: 300;
 }
+
 .main-info .title {
   font-family: "CocogooseLetterPress", sans-serif;
   font-size: 1.9em;
@@ -325,11 +343,13 @@ section .separator {
   margin-left: 11%;
   margin-top: -1em;
 }
+
 .main-info .title .year {
   font-family: "Cocogoose", sans-serif;
   font-size: 1em;
   color: #ec5242;
 }
+
 .main-info .post-title {
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -342,12 +362,15 @@ section .separator {
   opacity: 0.9;
   z-index: 1000;
 }
+
 .main-info .post-title .post-title-desktop {
   display: none;
 }
+
 .main-info .post-title .post-title-mobile {
   display: block;
 }
+
 .main-info .contact-area {
   display: flex;
   flex-direction: column;
@@ -358,10 +381,12 @@ section .separator {
   color: #272a31;
   width: 60%;
 }
+
 .main-info .contact-area .contact-email {
   font-weight: bold;
   font-size: 22px;
 }
+
 .main-info .contact-area .contact-email a {
   color: #141313;
 }
@@ -378,23 +403,28 @@ section .separator {
   padding-inline: 5%;
   padding-bottom: 2em;
 }
+
 .logo-section .section-title {
   font-family: "Lato", sans-serif;
   font-size: 25px;
   color: #272a31;
 }
+
 .logo-section .logo-text-desktop {
   display: none;
 }
+
 .logo-section .logo-text-mobile {
   display: block;
 }
+
 .logo-section .logo-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 15px;
 }
+
 .logo-section .logo-container img {
   width: 70%;
   height: auto;
@@ -417,17 +447,20 @@ section .separator {
   width: 100%;
   background-color: white;
 }
+
 .past-events .section-title {
   font-family: "Lato", sans-serif;
   font-size: 25px;
   color: #272a31;
 }
+
 .past-events p {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   color: #272a31;
   text-align: center;
 }
+
 .past-events .past-images-container {
   display: flex;
   flex-direction: column;
@@ -435,17 +468,19 @@ section .separator {
   gap: 10px;
   padding-inline: 5vw;
 }
+
 .past-events .past-images-container .past-event {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px;
+  gap: 0;
   font-family: "Lato", sans-serif;
   font-size: 24px;
   color: white;
   position: relative;
 }
+
 .past-events .past-images-container .past-event .pe-overlay {
   position: absolute;
   top: 0;
@@ -456,9 +491,11 @@ section .separator {
   z-index: 5000;
   opacity: 0.7;
 }
+
 .past-events .past-images-container .past-event img {
   width: 90%;
 }
+
 .past-events .past-images-container .past-event .pe-text {
   display: flex;
   flex-direction: column;
@@ -475,6 +512,7 @@ section .separator {
   width: 100%;
   z-index: 10000;
 }
+
 .past-events .past-images-container .past-event .pe-text .year {
   font-size: 45px;
 }
@@ -491,12 +529,14 @@ section .separator {
   padding-bottom: 1em;
   margin-bottom: 2em;
 }
+
 .partners .section-title {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: white;
   margin-bottom: 8px;
 }
+
 .partners .partners-container {
   display: flex;
   flex-direction: row;
@@ -504,12 +544,15 @@ section .separator {
   gap: 1%;
   flex-wrap: wrap;
 }
+
 .partners .partners-container img {
   width: 30%;
   height: auto;
   filter: grayscale(95%);
 }
-.partners .partners-container img:last-child, .partners .partners-container img:first-child {
+
+.partners .partners-container img:last-child,
+.partners .partners-container img:first-child {
   filter: grayscale(70%);
 }
 
@@ -541,9 +584,11 @@ section .separator {
     background-position: 82% 90%, 89% 20%, 18% 20%, 50% 37%;
     background-size: 100px, 50px, 50px, 200px;
   }
+
   .main-info .pre-title {
     display: none;
   }
+
   .main-info .title {
     font-family: "CocogooseLetterPress", sans-serif;
     font-size: 3em;
@@ -552,11 +597,13 @@ section .separator {
     margin-left: 11%;
     margin-top: -1em;
   }
+
   .main-info .title .year {
     font-family: "Cocogoose", sans-serif;
     font-size: 1em;
     color: #ec5242;
   }
+
   .main-info .post-title {
     font-family: "Lato", sans-serif;
     font-size: 18px;
@@ -564,7 +611,7 @@ section .separator {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0px;
+    gap: 0;
     border: 1px solid gray;
     padding: 10px 15px;
     background-color: white;
@@ -573,14 +620,17 @@ section .separator {
     opacity: 0.9;
     z-index: 1000;
   }
+
   .main-info .post-title .post-title-desktop {
     display: block;
     text-align: center;
     width: 80%;
   }
+
   .main-info .post-title .post-title-mobile {
     display: none;
   }
+
   .main-info .contact-area {
     display: flex;
     flex-direction: column;
@@ -591,11 +641,13 @@ section .separator {
     color: #272a31;
     width: 60%;
   }
+
   .main-info .contact-area .contact-email {
     font-weight: bold;
     font-size: 22px;
     margin-top: -10px;
   }
+
   .main-info .contact-area .contact-email a {
     color: #141313;
   }
@@ -612,27 +664,33 @@ section .separator {
     padding-inline: 5%;
     padding-bottom: 2em;
   }
+
   .logo-section .section-title {
     font-family: "Lato", sans-serif;
     font-size: 25px;
     color: #272a31;
   }
+
   .logo-section .logo-text-mobile {
     display: none;
   }
+
   .logo-section .logo-text-desktop {
     display: block;
   }
+
   .logo-section .logo-text-desktop a {
     text-decoration: none;
     color: #ec5242;
   }
+
   .logo-section .logo-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
   }
+
   .logo-section .logo-container img {
     width: 30%;
     height: auto;
@@ -649,17 +707,20 @@ section .separator {
     width: 100%;
     background-color: white;
   }
+
   .past-events .section-title {
     font-family: "Lato", sans-serif;
     font-size: 25px;
     color: #272a31;
   }
+
   .past-events p {
     font-family: "Lato", sans-serif;
     font-size: 20px;
     color: #272a31;
     text-align: center;
   }
+
   .past-events .past-images-container {
     display: flex;
     flex-direction: row;
@@ -667,6 +728,7 @@ section .separator {
     gap: 20px;
     padding-inline: 3vw;
   }
+
   .past-events .past-images-container .past-event {
     margin: 0 auto;
     display: flex;
@@ -678,6 +740,7 @@ section .separator {
     color: white;
     position: relative;
   }
+
   .past-events .past-images-container .past-event .pe-overlay {
     position: absolute;
     top: 0;
@@ -688,9 +751,11 @@ section .separator {
     z-index: 5000;
     opacity: 0.7;
   }
+
   .past-events .past-images-container .past-event img {
     width: 70%;
   }
+
   .past-events .past-images-container .past-event .pe-text {
     display: flex;
     flex-direction: column;
@@ -707,6 +772,7 @@ section .separator {
     width: 100%;
     z-index: 10000;
   }
+
   .past-events .past-images-container .past-event .pe-text .year {
     font-size: 45px;
   }
@@ -723,14 +789,17 @@ section .separator {
     padding-bottom: 1em;
     margin-bottom: 2em;
   }
+
   .partners .section-title {
     font-family: "Lato", sans-serif;
     font-size: 25px;
     color: white;
   }
+
   .partners .separator {
     margin-top: 5px;
   }
+
   .partners .partners-container {
     display: flex;
     flex-direction: row;
@@ -739,15 +808,19 @@ section .separator {
     margin-block: 0.5em;
     flex-wrap: nowrap;
   }
+
   .partners .partners-container img {
     width: 15%;
     height: auto;
     filter: grayscale(95%);
   }
-  .partners .partners-container img:last-child, .partners .partners-container img:first-child {
+
+  .partners .partners-container img:last-child,
+  .partners .partners-container img:first-child {
     filter: grayscale(70%);
   }
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -755,27 +828,32 @@ footer {
   gap: 20px;
   padding-bottom: 1em;
 }
+
 footer a {
   color: #ec5242;
 }
+
 footer .footer-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px;
-  font-family: font-3;
+  gap: 0;
+  font-family: 'Lato', sans-serif;
   font-size: 12px;
   color: #272a31;
 }
+
 footer .footer-text .heart {
   color: red;
 }
+
 footer .footer-text p {
   margin-block: 5px;
   font-size: 18px;
   color: #272a31;
   font-weight: 200;
 }
+
 footer .footer-icons {
   display: flex;
   flex-direction: row;
@@ -783,19 +861,20 @@ footer .footer-icons {
   gap: 15px;
   font-size: 20px;
 }
+
 footer .footer-icons a {
   font-family: "CocogooseLetterPress", sans-serif;
   font-size: 25px;
   color: #272a31;
   padding: 10px;
 }
+
 footer .footer-email {
   margin-top: -30px;
 }
+
 footer .footer-email a {
   font-family: "Cocogoose", sans-serif;
   font-size: 14px;
   color: #272a31;
 }
-
-/*# sourceMappingURL=about.css.map */

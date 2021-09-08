@@ -1,4 +1,5 @@
-// Scrolling functions
+/* eslint-disable no-unused-vars */
+
 function disableScroll() {
   document.body.classList.add('unscrollable');
 }

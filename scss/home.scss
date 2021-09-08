@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 @import "resets";
 @import "fonts";
 @import "colors";
@@ -83,8 +85,8 @@ main {
     z-index: 1000;
 
     &:hover {
-        cursor: pointer;
-        color: $primary-2;
+      cursor: pointer;
+      color: $primary-2;
     }
   }
 }
@@ -310,7 +312,6 @@ section .separator {
       font-weight: bold;
       cursor: pointer;
 
-
       &:hover {
         color: $primary-2;
       }
@@ -502,7 +503,7 @@ section .separator {
     }
 
     .separator {
-        margin-top: 5px;
+      margin-top: 5px;
     }
 
     .partners-container {

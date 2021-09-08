@@ -1,40 +1,45 @@
 footer {
-    @include flex-column(center, 20px);
-    padding-bottom: 1em;
+  @include flex-column(center, 20px);
 
-    a {
-        color: $primary-2;
+  padding-bottom: 1em;
+
+  a {
+    color: $primary-2;
+  }
+
+  .footer-text {
+    @include flex-column(center, 0);
+    @include font-size-color($font-3, 12px, $primary-1);
+
+    .heart {
+      color: red;
     }
 
-    .footer-text {
-        @include flex-column(center, 0px);
-        @include font-size-color(font-3, 12px, $primary-1);
-        .heart {
-            color: red;
-        }
+    p {
+      margin-block: 5px;
+      font-size: 18px;
+      color: $primary-1;
+      font-weight: 200;
+    }
+  }
 
-        p {
-            margin-block: 5px;
-            font-size: 18px;
-            color: $primary-1;
-            font-weight: 200;
-        }
-    }
+  .footer-icons {
+    @include flex-row(center, 15px);
 
-    .footer-icons {
-        @include flex-row(center, 15px);
-        font-size: 20px;
-    }
+    font-size: 20px;
+  }
 
-    .footer-icons a {
-        @include font-size-color($font-2, 25px, $primary-1);
-        padding: 10px;
-    }
+  .footer-icons a {
+    @include font-size-color($font-2, 25px, $primary-1);
 
-    .footer-email {
-        margin-top: -30px;
-    }
-    .footer-email a {
-        @include font-size-color($font-1, 14px, $primary-1);
-    }
+    padding: 10px;
+  }
+
+  .footer-email {
+    margin-top: -30px;
+  }
+
+  .footer-email a {
+    @include font-size-color($font-1, 14px, $primary-1);
+  }
 }

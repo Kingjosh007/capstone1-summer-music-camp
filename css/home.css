@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 *,
 *::before,
 *::after {
@@ -8,10 +10,12 @@
   font-family: CocogooseLetterPress;
   src: url("../assets/fonts/cocogoose_letterpress/COCOGOOSELETTERPRESS-TRIAL.ttf");
 }
+
 @font-face {
   font-family: Cocogoose;
   src: url("../assets/fonts/cocogoose/Cocogoose_trial.ttf");
 }
+
 .unscrollable {
   height: 100%;
   overflow: hidden;
@@ -119,49 +123,59 @@ header {
     left: -60%;
     top: -200px;
   }
+
   25% {
     left: -40%;
     top: -180px;
   }
+
   50% {
     left: -25%;
     top: -140px;
   }
+
   75% {
     left: -10%;
     top: -70px;
   }
+
   100% {
     left: 0%;
     top: 0;
   }
 }
+
 @keyframes mobile-menu-animation-hide {
   0% {
     opacity: 1;
     left: 0%;
     top: 0;
   }
+
   25% {
     opacity: 0.75;
     left: 30%;
     top: -70px;
   }
+
   50% {
     opacity: 0.5;
     left: 60%;
     top: -140px;
   }
+
   75% {
     opacity: 0.25;
     left: 90%;
     top: -180px;
   }
+
   99% {
     opacity: 0;
     display: none;
   }
 }
+
 .mobile-menu {
   display: none;
 }
@@ -227,19 +241,22 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0px;
-    padding-bottom: 0px;
+    gap: 0;
+    padding-bottom: 0;
     box-shadow: 0 2px 2px 2px gray;
   }
+
   .header-desktop .desktop-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0px;
+    gap: 0;
   }
+
   .header-desktop .desktop-menu .logo-container {
     width: 10%;
   }
+
   .header-desktop .desktop-menu .logo-container img {
     position: absolute;
     left: 15%;
@@ -247,6 +264,7 @@ header {
     width: auto;
     height: 50px;
   }
+
   .header-desktop .desktop-menu ul {
     display: flex;
     flex-direction: row;
@@ -255,6 +273,7 @@ header {
     margin-left: 40vw;
     margin-top: -2px;
   }
+
   .header-desktop .desktop-menu ul .links-container a {
     font-family: "Lato", sans-serif;
     font-size: 18px;
@@ -262,10 +281,12 @@ header {
     font-weight: 600;
     text-decoration: none;
   }
+
   .header-desktop .desktop-menu ul .links-container a.active {
     color: #ec5242;
   }
 }
+
 .spinner {
   margin: 10px auto;
   width: 70px;
@@ -294,23 +315,31 @@ header {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     -webkit-transform: scale(0);
   }
+
   40% {
     -webkit-transform: scale(1);
   }
 }
+
 @keyframes sk-bouncedelay {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
+
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -342,6 +371,7 @@ main {
   background-position: 30% 60%, 84% 15%, 23% 12%, 93% 48%, 92% 95%;
   background-size: 100px, 50px, 50px, 40px, 100px;
 }
+
 .main-info .pre-title {
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
@@ -349,17 +379,20 @@ main {
   margin-top: 3em;
   font-weight: 300;
 }
+
 .main-info .title {
   font-family: "CocogooseLetterPress", sans-serif;
   font-size: 2em;
   color: #ec5242;
   margin-top: -1em;
 }
+
 .main-info .title .year {
   font-family: "Cocogoose", sans-serif;
   font-size: 1em;
   color: #ec5242;
 }
+
 .main-info .post-title {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -372,6 +405,7 @@ main {
   opacity: 0.9;
   z-index: 80;
 }
+
 .main-info .dates {
   font-family: "Cocogoose", sans-serif;
   font-size: 1em;
@@ -382,6 +416,7 @@ main {
   transform: scale(1.4);
   margin-left: 20%;
 }
+
 .main-info .venue {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -391,6 +426,7 @@ main {
   margin-left: 10px;
   z-index: 1000;
 }
+
 .main-info .venue:hover {
   cursor: pointer;
   color: #ec5242;
@@ -417,23 +453,27 @@ section .separator {
   color: #f8f8f8;
   padding-block: 1.2em;
 }
+
 .main-program .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background: #ce90ce;
 }
+
 .main-program .section-title {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: white;
 }
+
 .main-program .articles-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+
 .main-program .program-item {
   display: flex;
   flex-direction: row;
@@ -447,9 +487,11 @@ section .separator {
   border: 2px solid #3c3f46;
   opacity: 0.9;
 }
+
 .main-program .program-item .icon {
   font-size: 1.7em;
 }
+
 .main-program .program-item .activity {
   color: #ec5242;
   font-size: 18px;
@@ -457,14 +499,17 @@ section .separator {
   font-weight: bold;
   z-index: 100;
 }
+
 .main-program .program-item .description {
   color: #fff;
   font-size: 16px;
   text-align: left;
 }
+
 .main-program .see-program {
   display: none;
 }
+
 .main-program .enroll-btn {
   display: block;
   cursor: pointer;
@@ -488,28 +533,33 @@ section .separator {
   background-color: #f8f8f8;
   padding-bottom: 1em;
 }
+
 .instructors .section-title {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: #272a31;
   margin-top: 2em;
 }
+
 .instructors .instructors-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
 }
+
 .instructors .instructor {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 7px;
 }
+
 .instructors .instructor img {
   width: 95%;
   height: auto;
 }
+
 .instructors .instructor .instructor-text {
   display: flex;
   flex-direction: column;
@@ -518,17 +568,20 @@ section .separator {
   justify-content: flex-start;
   font-family: "Lato", sans-serif;
 }
+
 .instructors .instructor .instructor-text .separator {
   background-color: #d3d3d3;
   align-self: flex-start;
   margin-bottom: 10px;
   width: 25%;
 }
+
 .instructors .instructor .instructor-text .instructor-name {
   color: #272a31;
   font-size: 20px;
   font-weight: 700;
 }
+
 .instructors .instructor .instructor-text .instructor-title {
   color: #ec5242;
   font-style: italic;
@@ -536,12 +589,14 @@ section .separator {
   font-size: 16px;
   margin-top: -4%;
 }
+
 .instructors .instructor .instructor-text .instructor-description {
   color: #272a31;
   font-size: 14px;
   font-weight: 200;
   margin-top: -2%;
 }
+
 .instructors .show-more {
   display: flex;
   flex-direction: row;
@@ -557,6 +612,7 @@ section .separator {
   background: #fff;
   padding-block: 15px;
 }
+
 .instructors .show-more span {
   color: #ec5242;
   margin-left: 15px;
@@ -574,12 +630,14 @@ section .separator {
   padding-bottom: 1em;
   margin-bottom: 2em;
 }
+
 .partners .section-title {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: white;
   margin-bottom: 8px;
 }
+
 .partners .partners-container {
   display: flex;
   flex-direction: row;
@@ -587,12 +645,15 @@ section .separator {
   gap: 1%;
   flex-wrap: wrap;
 }
+
 .partners .partners-container img {
   width: 30%;
   height: auto;
   filter: grayscale(95%);
 }
-.partners .partners-container img:last-child, .partners .partners-container img:first-child {
+
+.partners .partners-container img:last-child,
+.partners .partners-container img:first-child {
   filter: grayscale(70%);
 }
 
@@ -609,6 +670,7 @@ section .separator {
     margin-block: 1.5em;
     z-index: 10000;
   }
+
   .see-program a {
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -616,6 +678,7 @@ section .separator {
     font-weight: bold;
     cursor: pointer;
   }
+
   .see-program a:hover {
     color: #ec5242;
   }
@@ -636,6 +699,7 @@ section .separator {
     background-position: 30% 65%, 60% 15%, 45% 10%, 60% 48%, 65% 95%, 90% 50%;
     background-size: 100px, 50px, 50px, 40px, 100px, 150px;
   }
+
   .main-info .pre-title {
     font-family: "Lato", sans-serif;
     font-size: 2.5em;
@@ -643,6 +707,7 @@ section .separator {
     margin-top: 0;
     font-weight: 300;
   }
+
   .main-info .title {
     font-family: "CocogooseLetterPress", sans-serif;
     font-size: 3em;
@@ -650,11 +715,13 @@ section .separator {
     width: 80%;
     margin-top: -1em;
   }
+
   .main-info .title .year {
     font-family: "Cocogoose", sans-serif;
     font-size: 1em;
     color: #ec5242;
   }
+
   .main-info .post-title {
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -667,6 +734,7 @@ section .separator {
     opacity: 0.9;
     z-index: 20000;
   }
+
   .main-info .dates {
     font-family: "Cocogoose", sans-serif;
     font-size: 1.5em;
@@ -677,6 +745,7 @@ section .separator {
     transform: scale(1.4);
     margin-left: 18%;
   }
+
   .main-info .venue {
     font-family: "Lato", sans-serif;
     font-size: 1em;
@@ -694,6 +763,7 @@ section .separator {
     font-size: 25px;
     color: white;
   }
+
   .main-program .articles-container {
     display: flex;
     flex-direction: row;
@@ -701,12 +771,12 @@ section .separator {
     gap: 1px;
     margin-inline: 3em;
   }
+
   .main-program .program-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    align-items: center;
     padding: 12px 8px;
     cursor: pointer;
     margin-inline: 2px;
@@ -715,9 +785,11 @@ section .separator {
     height: 200px;
     z-index: 1000;
   }
+
   .main-program .program-item .icon {
     font-size: 1.8em;
   }
+
   .main-program .program-item .activity {
     color: #ec5242;
     font-size: 18px;
@@ -725,11 +797,13 @@ section .separator {
     font-weight: bold;
     z-index: 100;
   }
+
   .main-program .program-item .description {
     color: #fff;
     font-size: 14px;
     text-align: center;
   }
+
   .main-program .program-item:hover {
     border: 5px solid #f8f8f8;
   }
@@ -737,12 +811,14 @@ section .separator {
   .instructors {
     margin-bottom: 2em;
   }
+
   .instructors .section-title {
     font-family: "Lato", sans-serif;
     font-size: 25px;
     color: #272a31;
     margin-top: 2em;
   }
+
   .instructors .instructors-container {
     display: flex;
     flex-direction: row;
@@ -751,6 +827,7 @@ section .separator {
     gap: 10%;
     margin-top: 1em;
   }
+
   .instructors .instructors-container .instructor {
     width: 35%;
     display: flex;
@@ -758,26 +835,32 @@ section .separator {
     justify-content: center;
     gap: 0;
   }
+
   .instructors .instructors-container .instructor img {
     width: 60%;
     height: auto;
   }
+
   .instructors .instructors-container .instructor .instructor-text {
     margin-left: -30%;
     margin-top: -10px;
   }
+
   .instructors .instructors-container .instructor .instructor-text .separator {
     background-color: #d3d3d3;
     align-self: flex-start;
     margin-bottom: 10px;
     width: 25%;
   }
+
   .instructors .instructors-container .instructor .instructor-text .instructor-name {
     font-size: 22px;
   }
+
   .instructors .instructors-container .instructor .instructor-text .instructor-title {
     font-size: 17px;
   }
+
   .instructors .instructors-container .instructor .instructor-text .instructor-description {
     font-size: 14px;
   }
@@ -794,14 +877,17 @@ section .separator {
     padding-bottom: 1em;
     margin-bottom: 2em;
   }
+
   .partners .section-title {
     font-family: "Lato", sans-serif;
     font-size: 25px;
     color: white;
   }
+
   .partners .separator {
     margin-top: 5px;
   }
+
   .partners .partners-container {
     display: flex;
     flex-direction: row;
@@ -810,15 +896,19 @@ section .separator {
     margin-block: 0.5em;
     flex-wrap: nowrap;
   }
+
   .partners .partners-container img {
     width: 15%;
     height: auto;
     filter: grayscale(95%);
   }
-  .partners .partners-container img:last-child, .partners .partners-container img:first-child {
+
+  .partners .partners-container img:last-child,
+  .partners .partners-container img:first-child {
     filter: grayscale(70%);
   }
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -826,27 +916,32 @@ footer {
   gap: 20px;
   padding-bottom: 1em;
 }
+
 footer a {
   color: #ec5242;
 }
+
 footer .footer-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px;
-  font-family: font-3;
+  gap: 0;
+  font-family: 'Lato', sans-serif;
   font-size: 12px;
   color: #272a31;
 }
+
 footer .footer-text .heart {
   color: red;
 }
+
 footer .footer-text p {
   margin-block: 5px;
   font-size: 18px;
   color: #272a31;
   font-weight: 200;
 }
+
 footer .footer-icons {
   display: flex;
   flex-direction: row;
@@ -854,19 +949,20 @@ footer .footer-icons {
   gap: 15px;
   font-size: 20px;
 }
+
 footer .footer-icons a {
   font-family: "CocogooseLetterPress", sans-serif;
   font-size: 25px;
   color: #272a31;
   padding: 10px;
 }
+
 footer .footer-email {
   margin-top: -30px;
 }
+
 footer .footer-email a {
   font-family: "Cocogoose", sans-serif;
   font-size: 14px;
   color: #272a31;
 }
-
-/*# sourceMappingURL=home.css.map */

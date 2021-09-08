@@ -206,48 +206,48 @@ header {
 -------------------------------------------- */
 
 @media only screen and (min-width: 768px) {
-
   .header-mobile {
     display: none;
   }
 
   .header-desktop {
-    @include flex-row(center, 0px);
-    padding-bottom: 0px;
+    @include flex-row(center, 0);
+
+    padding-bottom: 0;
     box-shadow: 0 2px 2px 2px gray;
 
     .desktop-menu {
-        @include flex-row(space-between, 0px);
+      @include flex-row(space-between, 0);
 
-        .logo-container {
-            width: 10%;
-            
-            img {
-                position: absolute;
-                left: 15%;
-                top: 10%;
-                width: auto;
-                height: 50px;
-            }
+      .logo-container {
+        width: 10%;
+
+        img {
+          position: absolute;
+          left: 15%;
+          top: 10%;
+          width: auto;
+          height: 50px;
         }
+      }
 
-        ul {
-            @include flex-row(center, 5vw);
-            margin-left: 40vw;
-            margin-top: -2px;
+      ul {
+        @include flex-row(center, 5vw);
 
-            .links-container a {
-                @include font-size-color($font-3, 18px, $primary-1);
-                font-weight: 600;
-                text-decoration: none;
-                
+        margin-left: 40vw;
+        margin-top: -2px;
 
-                &.active {
-                    color: $primary-2;
-                }
-            }
+        .links-container a {
+          @include font-size-color($font-3, 18px, $primary-1);
+
+          font-weight: 600;
+          text-decoration: none;
+
+          &.active {
+            color: $primary-2;
+          }
         }
+      }
     }
-    
   }
 }
