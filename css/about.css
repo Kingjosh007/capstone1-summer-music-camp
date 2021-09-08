@@ -20,7 +20,7 @@
 .header-mobile,
 .header-desktop {
   width: 100%;
-  padding: 20px;
+  padding: 25px;
   padding-left: 40px;
   margin: 0;
 }
@@ -191,10 +191,14 @@ header {
 .mobile-menu.show ul a,
 .mobile-menu.hide ul a {
   text-decoration: none;
-  color: #ec5242;
+  color: #272a31;
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
+}
+
+.mobile-menu.show ul a.active {
+  color: #ec5242;
 }
 
 .links-container {
@@ -218,7 +222,44 @@ header {
   }
 
   .header-desktop {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+  }
+  .header-desktop .desktop-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .header-desktop .desktop-menu .logo-container {
+    width: 10%;
+  }
+  .header-desktop .desktop-menu .logo-container img {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: auto;
+    height: 50px;
+  }
+  .header-desktop .desktop-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+    margin-left: 40vw;
+    margin-top: -2px;
+  }
+  .header-desktop .desktop-menu ul .links-container a {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #272a31;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .header-desktop .desktop-menu ul .links-container a.active {
+    color: #ec5242;
   }
 }
 /* ------------------------------------------

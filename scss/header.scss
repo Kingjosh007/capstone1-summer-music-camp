@@ -4,13 +4,14 @@
 .header-mobile,
 .header-desktop {
   width: 100%;
-  padding: 20px;
+  padding: 25px;
   padding-left: 40px;
   margin: 0;
 }
 
 header {
   @include place-it(relative, 0, 0);
+
   width: 100vw;
 }
 
@@ -146,7 +147,7 @@ header {
 }
 
 .mobile-menu {
-    display: none;
+  display: none;
 }
 
 .mobile-menu.show {
@@ -176,10 +177,14 @@ header {
 .mobile-menu.show ul a,
 .mobile-menu.hide ul a {
   text-decoration: none;
-  color: $primary-2;
+  color: $primary-1;
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
+}
+
+.mobile-menu.show ul a.active {
+  color: $primary-2;
 }
 
 .links-container {
@@ -204,6 +209,40 @@ header {
   }
 
   .header-desktop {
-    display: block;
+    @include flex-row(center, 0px);
+
+    .desktop-menu {
+        @include flex-row(space-between, 0px);
+
+        .logo-container {
+            width: 10%;
+            
+            img {
+                position: absolute;
+                left: 20%;
+                top: 10%;
+                width: auto;
+                height: 50px;
+            }
+        }
+
+        ul {
+            @include flex-row(center, 5vw);
+            margin-left: 40vw;
+            margin-top: -2px;
+
+            .links-container a {
+                @include font-size-color($font-3, 18px, $primary-1);
+                font-weight: 600;
+                text-decoration: none;
+                
+
+                &.active {
+                    color: $primary-2;
+                }
+            }
+        }
+    }
+    
   }
 }
