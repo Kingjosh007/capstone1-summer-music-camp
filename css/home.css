@@ -71,7 +71,7 @@ header {
   position: static;
   opacity: 1;
   height: 100%;
-  z-index: 50000;
+  z-index: 500000;
 }
 
 .hamburger-icon .top-bar,
@@ -171,7 +171,7 @@ header {
   left: 0%;
   width: 100vw;
   height: 100vh;
-  z-index: 10000;
+  z-index: 100000;
   background: #f8f8f8;
   padding-top: 20%;
   padding-inline: 2% 10%;
@@ -839,7 +839,7 @@ footer .footer-text .heart {
 }
 footer .footer-text p {
   margin-block: 5px;
-  font-size: 14px;
+  font-size: 18px;
   color: #272a31;
   font-weight: 200;
 }

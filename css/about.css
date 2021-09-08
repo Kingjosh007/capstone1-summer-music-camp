@@ -17,6 +17,11 @@
   overflow: hidden;
 }
 
+.unscrollable {
+  height: 100%;
+  overflow: hidden;
+}
+
 .header-mobile,
 .header-desktop {
   width: 100%;
@@ -71,7 +76,7 @@ header {
   position: static;
   opacity: 1;
   height: 100%;
-  z-index: 50000;
+  z-index: 500000;
 }
 
 .hamburger-icon .top-bar,
@@ -171,7 +176,7 @@ header {
   left: 0%;
   width: 100vw;
   height: 100vh;
-  z-index: 10000;
+  z-index: 100000;
   background: #f8f8f8;
   padding-top: 20%;
   padding-inline: 2% 10%;
@@ -277,6 +282,14 @@ main {
   padding-inline: 0;
 }
 
+section .separator {
+  width: 10%;
+  align-self: center;
+  background-color: #e74c33;
+  height: 2px;
+  margin-block: -1em 0.7em;
+}
+
 .main-info {
   display: flex;
   flex-direction: column;
@@ -284,13 +297,13 @@ main {
   gap: 1em;
   position: relative;
   margin-top: -2rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 3em;
-  padding-left: 5%;
+  padding-inline: 5%;
   background-image: url("../assets/svg/1480796300.svg"), url("../assets/svg/piano-illustration.svg"), url("../assets/svg/Drums-Silhouette-2.svg"), url("../assets/svg/Geometric-Heart-4.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-attachment: scroll, scroll, scroll, scroll, scroll;
-  background-position: 95% 90%, 84% 15%, 23% 12%, 50% 60%;
+  background-position: 95% 90%, 89% 10%, 28% 7%, 50% 60%;
   background-size: 100px, 50px, 50px, 200px;
 }
 .main-info .pre-title {
@@ -304,6 +317,8 @@ main {
   font-family: "CocogooseLetterPress", sans-serif;
   font-size: 1.9em;
   color: #ec5242;
+  width: 100%;
+  margin-left: 11%;
   margin-top: -1em;
 }
 .main-info .title .year {
@@ -313,15 +328,15 @@ main {
 }
 .main-info .post-title {
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   color: #222;
-  border: 2px solid gray;
+  border: 1px solid gray;
   padding: 10px 15px;
-  background-color: #f7f7f7;
+  background-color: white;
   max-width: 90%;
   margin: 0 2% 0 2%;
   opacity: 0.9;
-  z-index: 80;
+  z-index: 1000;
 }
 .main-info .post-title .post-title-desktop {
   display: none;
@@ -335,12 +350,13 @@ main {
   align-items: center;
   gap: 2px;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   color: #272a31;
   width: 60%;
 }
 .main-info .contact-area .contact-email {
   font-weight: bold;
+  font-size: 22px;
 }
 .main-info .contact-area .contact-email a {
   color: #141313;
@@ -367,6 +383,116 @@ main {
 .main-info .venue:hover {
   cursor: pointer;
   color: #ec5242;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #272a31;
+  background: white;
+  padding-inline: 5%;
+  padding-bottom: 2em;
+}
+.logo-section .section-title {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  color: #272a31;
+}
+.logo-section .logo-text-desktop {
+  display: none;
+}
+.logo-section .logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+.logo-section .logo-container img {
+  width: 70%;
+  height: auto;
+}
+
+.full-separator {
+  width: 100%;
+  height: 1.5px;
+  background-color: gray;
+}
+
+.past-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-block: 1em;
+  width: 100%;
+  background-color: white;
+}
+.past-events .section-title {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  color: #272a31;
+}
+.past-events p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #272a31;
+  text-align: center;
+}
+.past-events .past-images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-inline: 5vw;
+}
+.past-events .past-images-container .past-event {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: white;
+  position: relative;
+}
+.past-events .past-images-container .past-event .pe-overlay {
+  position: absolute;
+  top: 0;
+  left: 4.7vw;
+  width: 90%;
+  height: 100%;
+  background: #ec5242;
+  z-index: 5000;
+  opacity: 0.7;
+}
+.past-events .past-images-container .past-event img {
+  width: 90%;
+}
+.past-events .past-images-container .past-event .pe-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10000;
+}
+.past-events .past-images-container .past-event .pe-text .year {
+  font-size: 45px;
 }
 
 .partners {
@@ -476,7 +602,7 @@ footer .footer-text .heart {
 }
 footer .footer-text p {
   margin-block: 5px;
-  font-size: 14px;
+  font-size: 18px;
   color: #272a31;
   font-weight: 200;
 }
