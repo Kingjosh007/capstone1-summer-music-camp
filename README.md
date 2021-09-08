@@ -24,8 +24,39 @@ To get a local copy of this project, do the following:
 
 📱 **Mobile version** 
 
+&nbsp;
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; **Home page (mobile)** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **About page (mobile)**
+
+![Home page - mobile](./screenshots/home-page-mobile.gif)  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![About page - mobile](./screenshots/about-page-mobile.gif)
+
+
+&nbsp;
+
+&nbsp;
+
+
 
 💻 **Desktop version** 
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Home page (desktop)**
+
+![Home page - desktop](./screenshots/home-page-desktop.gif)
+
+&nbsp;
+
+&nbsp;
+
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **About page (desktop)**
+
+![About page - desktop](./screenshots/about-page-desktop.gif)
+
+
+&nbsp;
+
+&nbsp;
 
 
 
