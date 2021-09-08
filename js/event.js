@@ -1,10 +1,11 @@
 let theEvent = {
     fullName: "Global Music Summer Camp for Teenagers",
+    shortName: "GMSCT",
     logo: "images/logo.png",
-    location: "Qwerty International Hotel, Douala, Cameroon",
+    venue: "Qwerty International Hotel, Douala, Cameroon",
     startDate: "2022-07-15",
     endDate: "2022-05-25",
-}
+};
 
 var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
@@ -20,4 +21,13 @@ function updateDate()
     document.querySelector('.end-date').textContent = `${theEvent.endDate.split("-")[2]}(${dayNameFromDate(theEvent.endDate).slice(0,3).toUpperCase()})`
 }
 
-updateDate();
+function updateEventInfos() 
+{
+    updateDate();
+    document.querySelector('.logo-container img').src = "images/logo.png";
+    document.querySelector('.title').innerHTML = `${theEvent.fullName.toUpperCase()} <span class="year">${theEvent.startDate.split("-")[0]}</span>`;
+    document.querySelector('.venue').textContent = `@ ${theEvent.venue}`;
+    document.querySelector('.event-short-name').textContent = `${theEvent.shortName} ${theEvent.startDate.split("-")[0]}`;
+}
+
+updateEventInfos();
