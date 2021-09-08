@@ -262,6 +262,147 @@ header {
     color: #ec5242;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f8f8;
+  width: 100vw;
+  margin: 0;
+  overflow-x: unset;
+}
+
+main {
+  padding-inline: 0;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  margin-top: -2rem;
+  padding-top: 5rem;
+  padding-bottom: 3em;
+  padding-left: 5%;
+  background-image: url("../assets/svg/1480796300.svg"), url("../assets/svg/piano-illustration.svg"), url("../assets/svg/Drums-Silhouette-2.svg"), url("../assets/svg/Geometric-Heart-4.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll, scroll, scroll;
+  background-position: 95% 90%, 84% 15%, 23% 12%, 50% 60%;
+  background-size: 100px, 50px, 50px, 200px;
+}
+.main-info .pre-title {
+  font-family: "Lato", sans-serif;
+  font-size: 1.7em;
+  color: #ec5242;
+  margin-top: 1em;
+  font-weight: 300;
+}
+.main-info .title {
+  font-family: "CocogooseLetterPress", sans-serif;
+  font-size: 1.9em;
+  color: #ec5242;
+  margin-top: -1em;
+}
+.main-info .title .year {
+  font-family: "Cocogoose", sans-serif;
+  font-size: 1em;
+  color: #ec5242;
+}
+.main-info .post-title {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #222;
+  border: 2px solid gray;
+  padding: 10px 15px;
+  background-color: #f7f7f7;
+  max-width: 90%;
+  margin: 0 2% 0 2%;
+  opacity: 0.9;
+  z-index: 80;
+}
+.main-info .post-title .post-title-desktop {
+  display: none;
+}
+.main-info .post-title .post-title-mobile {
+  display: block;
+}
+.main-info .contact-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #272a31;
+  width: 60%;
+}
+.main-info .contact-area .contact-email {
+  font-weight: bold;
+}
+.main-info .contact-area .contact-email a {
+  color: #141313;
+}
+.main-info .dates {
+  font-family: "Cocogoose", sans-serif;
+  font-size: 1em;
+  color: #272a31;
+  font-weight: 900;
+  line-height: 50px;
+  width: 90%;
+  transform: scale(1.4);
+  margin-left: 20%;
+}
+.main-info .venue {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+  margin-top: -1.7em;
+  margin-left: 10px;
+  z-index: 10000;
+}
+.main-info .venue:hover {
+  cursor: pointer;
+  color: #ec5242;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background: #534747;
+  background: linear-gradient(90deg, #534747 0%, #7a726a 78%);
+  color: #fcfcfc;
+  padding-inline: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+.partners .section-title {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 8px;
+}
+.partners .partners-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+.partners .partners-container img {
+  width: 30%;
+  height: auto;
+  filter: grayscale(95%);
+}
+.partners .partners-container img:last-child, .partners .partners-container img:first-child {
+  filter: grayscale(70%);
+}
+
 /* ------------------------------------------
   Media Query
 -------------------------------------------- */
@@ -272,6 +413,43 @@ header {
 
   .see-program {
     display: block;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background: #534747;
+    background: linear-gradient(90deg, #534747 0%, #7a726a 78%);
+    color: #fcfcfc;
+    padding-inline: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+  }
+  .partners .section-title {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: white;
+  }
+  .partners .separator {
+    margin-top: 5px;
+  }
+  .partners .partners-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1%;
+    margin-block: 0.5em;
+    flex-wrap: nowrap;
+  }
+  .partners .partners-container img {
+    width: 15%;
+    height: auto;
+    filter: grayscale(95%);
+  }
+  .partners .partners-container img:last-child, .partners .partners-container img:first-child {
+    filter: grayscale(70%);
   }
 }
 footer {
