@@ -385,6 +385,11 @@ main {
   font-weight: 600;
   margin-top: -1.7em;
   margin-left: 10px;
+  z-index: 10000;
+}
+.main-info .venue:hover {
+  cursor: pointer;
+  color: #ec5242;
 }
 
 section .separator {
@@ -584,7 +589,7 @@ section .separator {
   filter: grayscale(95%);
 }
 .partners .partners-container img:last-child, .partners .partners-container img:first-child {
-  filter: grayscale(60%);
+  filter: grayscale(70%);
 }
 
 /* ------------------------------------------
@@ -725,6 +730,9 @@ section .separator {
     border: 5px solid #f8f8f8;
   }
 
+  .instructors {
+    margin-bottom: 2em;
+  }
   .instructors .section-title {
     font-family: "Lato", sans-serif;
     font-size: 25px;
@@ -761,13 +769,50 @@ section .separator {
     width: 25%;
   }
   .instructors .instructors-container .instructor .instructor-text .instructor-name {
-    font-size: 16px;
+    font-size: 22px;
   }
   .instructors .instructors-container .instructor .instructor-text .instructor-title {
-    font-size: 13px;
+    font-size: 17px;
   }
   .instructors .instructors-container .instructor .instructor-text .instructor-description {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background: #534747;
+    background: linear-gradient(90deg, #534747 0%, #7a726a 78%);
+    color: #fcfcfc;
+    padding-inline: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+  }
+  .partners .section-title {
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: white;
+  }
+  .partners .separator {
+    margin-top: 5px;
+  }
+  .partners .partners-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1%;
+    margin-block: 0.5em;
+    flex-wrap: nowrap;
+  }
+  .partners .partners-container img {
+    width: 15%;
+    height: auto;
+    filter: grayscale(95%);
+  }
+  .partners .partners-container img:last-child, .partners .partners-container img:first-child {
+    filter: grayscale(70%);
   }
 }
 footer {

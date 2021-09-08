@@ -32,8 +32,8 @@ function handleViewMore(isM) {
         showMoreBtn.style.display = 'none';
         document.querySelector('.enroll-btn').style.display = 'none';
         document.querySelector('.see-program').style.display = 'block';
-        document.querySelector('.partners').style.display = 'block';
-        document.querySelector('footer').style.display = 'block';
+        document.querySelector('.partners').style.display = 'flex';
+        document.querySelector('footer').style.display = 'flex';
         instructorsContainer.innerHTML = codeForInstructors(instructors);
     }
     

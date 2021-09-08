@@ -80,6 +80,12 @@ main {
     font-weight: 600;
     margin-top: -1.7em;
     margin-left: 10px;
+    z-index: 10000;
+
+    &:hover {
+        cursor: pointer;
+        color: $primary-2;
+    }
   }
 }
 
@@ -278,7 +284,7 @@ section .separator {
 
       &:last-child,
       &:first-child {
-        filter: grayscale(60%);
+        filter: grayscale(70%);
       }
     }
   }
@@ -299,17 +305,16 @@ section .separator {
     z-index: 10000;
 
     a {
-        @include font-size-color($font-3, 16px, $home-main-bg);
+      @include font-size-color($font-3, 16px, $home-main-bg);
 
-        font-weight: bold;
-        cursor: pointer;
-        
+      font-weight: bold;
+      cursor: pointer;
 
-        &:hover {
-            color: $primary-2;
-        }
+
+      &:hover {
+        color: $primary-2;
+      }
     }
-    
   }
 
   // Main infos
@@ -429,60 +434,95 @@ section .separator {
   }
 
   .instructors {
+    margin-bottom: 2em;
+
     .section-title {
-        @include font-size-color($font-3, 25px, $primary-1);
-    
-        margin-top: 2em;
-      }
+      @include font-size-color($font-3, 25px, $primary-1);
 
-      .instructors-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10%;
-        margin-top: 1em;
-
-        .instructor {
-            width: 35%;
-            @include flex-row(center, 0);
-
-            img {
-                width: 60%;
-                height: auto;
-              }
-
-            .instructor-text {
-                margin-left: -30%;
-                margin-top: -10px;
-
-                .separator {
-                    background-color: $primary-3;
-                    align-self: flex-start;
-                    margin-bottom: 10px;
-                    width: 25%;
-                  }
-            
-                  .instructor-name {
-                    font-size: 16px;
-                  }
-            
-                  .instructor-title {
-                    font-size: 13px;
-                  }
-            
-                  .instructor-description {
-                    font-size: 12px;
-                  }
-
-            }
-
-      }
+      margin-top: 2em;
     }
 
+    .instructors-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10%;
+      margin-top: 1em;
+
+      .instructor {
+        width: 35%;
+
+        @include flex-row(center, 0);
+
+        img {
+          width: 60%;
+          height: auto;
+        }
+
+        .instructor-text {
+          margin-left: -30%;
+          margin-top: -10px;
+
+          .separator {
+            background-color: $primary-3;
+            align-self: flex-start;
+            margin-bottom: 10px;
+            width: 25%;
+          }
+
+          .instructor-name {
+            font-size: 22px;
+          }
+
+          .instructor-title {
+            font-size: 17px;
+          }
+
+          .instructor-description {
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
 
+  .partners {
+    @include flex-column(center, 1em);
 
+    background: rgb(83, 71, 71);
+    background: linear-gradient(90deg, rgba(83, 71, 71, 1) 0%, rgb(122, 114, 106) 78%);
+    color: #fcfcfc;
+    padding-inline: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+
+    .section-title {
+      @include font-size-color($font-3, 25px, white);
+    }
+
+    .separator {
+        margin-top: 5px;
+    }
+
+    .partners-container {
+      @include flex-row(space-around, 1%);
+
+      margin-block: 0.5em;
+      flex-wrap: nowrap;
+
+      img {
+        width: 15%;
+        height: auto;
+        filter: grayscale(95%);
+
+        &:last-child,
+        &:first-child {
+          filter: grayscale(70%);
+        }
+      }
+    }
+  }
 }
 
 @import "footer";
