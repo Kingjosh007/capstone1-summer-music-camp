@@ -1,0 +1,273 @@
+@import "colors";
+@import "layout";
+
+.header-mobile,
+.header-desktop {
+  width: 100%;
+  padding: 25px;
+  padding-left: 40px;
+  margin: 0;
+}
+
+header {
+  @include place-it(relative, 0, 0);
+
+  background: $home-main-bg;
+  z-index: 2000;
+  width: 100vw;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-image: url('../assets/jpg/kyle-smith-music-camp.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0 0;
+  background-size: cover;
+  opacity: 0.12;
+  background-color: $primary-3;
+}
+
+.header-mobile {
+  @include flex-row(space-between, 0);
+  @include place-it(relative, 0, 0);
+}
+
+.header-desktop {
+  display: none;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  @include flex-column(center, 0.4rem);
+
+  position: static;
+  opacity: 1;
+  height: 100%;
+  z-index: 500000;
+}
+
+.hamburger-icon .top-bar,
+.hamburger-icon .middle-bar,
+.hamburger-icon .bottom-bar {
+  width: 2.3rem;
+  height: 0.4rem;
+  transition: all 0.4s linear;
+  position: relative;
+  transform-origin: 0.45px;
+  background-color: $hamburger-color;
+}
+
+.hamburger-icon .top-bar {
+  transform: rotate(0);
+}
+
+.hamburger-icon .middle-bar {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hamburger-icon .bottom-bar {
+  transform: rotate(0);
+}
+
+.hamburger-icon.open .top-bar {
+  transform: rotate(45deg);
+}
+
+.hamburger-icon.open .middle-bar {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.hamburger-icon.open .bottom-bar {
+  transform: rotate(-45deg);
+}
+
+/* Mobile menu */
+@keyframes mobile-menu-animation-show {
+  0% {
+    left: -60%;
+    top: -200px;
+  }
+
+  25% {
+    left: -40%;
+    top: -180px;
+  }
+
+  50% {
+    left: -25%;
+    top: -140px;
+  }
+
+  75% {
+    left: -10%;
+    top: -70px;
+  }
+
+  100% {
+    left: 0%;
+    top: 0;
+  }
+}
+
+@keyframes mobile-menu-animation-hide {
+  0% {
+    opacity: 1;
+    left: 0%;
+    top: 0;
+  }
+
+  25% {
+    opacity: 0.75;
+    left: 30%;
+    top: -70px;
+  }
+
+  50% {
+    opacity: 0.5;
+    left: 60%;
+    top: -140px;
+  }
+
+  75% {
+    opacity: 0.25;
+    left: 90%;
+    top: -180px;
+  }
+
+  99% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.show {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  background: $home-main-bg;
+  padding-top: 20%;
+  padding-inline: 2% 10%;
+  animation-name: mobile-menu-animation-show;
+  animation-duration: 0.2s;
+}
+
+.mobile-menu.show ul,
+.mobile-menu.hide ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  font-family: $font-1;
+}
+
+.mobile-menu.show ul a,
+.mobile-menu.hide ul a {
+  text-decoration: none;
+  color: $primary-1;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.mobile-menu.show ul a.active {
+  color: $primary-2;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.mobile-menu.hide {
+  background-color: white;
+  animation-name: mobile-menu-animation-hide;
+  animation-duration: 0.4s;
+}
+
+/* ------------------------------------------
+  Media Query
+-------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  .header-mobile {
+    display: none;
+  }
+
+  .header-desktop {
+    @include flex-column(center, 0);
+
+    box-shadow: 0 2px 2px 2px gray;
+    padding-bottom: 5px;
+    width: 100vw;
+
+    .darkbar {
+      @include flex-row(flex-end, 2%);
+
+      position: absolute;
+      padding: 10px;
+      top: 0;
+      left: 0;
+      padding-right: 10%;
+      width: 100vw;
+      background: #3e3e3e;
+      color: #ddd;
+
+      a {
+        @include font-size-color($font-3, 14px, white);
+
+        text-decoration: none;
+      }
+    }
+
+    .desktop-menu {
+      @include flex-row(space-between, 0);
+
+      .logo-container {
+        width: 10%;
+
+        img {
+          position: relative;
+          left: 15%;
+          top: 35%;
+          width: auto;
+          height: 40px;
+        }
+      }
+
+      ul {
+        @include flex-row(center, 5vw);
+
+        margin-left: 42vw;
+        margin-top: 35px;
+
+        .links-container a {
+          @include font-size-color($font-3, 18px, $primary-1);
+
+          font-weight: 600;
+          text-decoration: none;
+
+          &.active {
+            color: $primary-2;
+          }
+        }
+      }
+    }
+  }
+}

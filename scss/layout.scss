@@ -1,0 +1,24 @@
+@mixin flex-row($jc, $gap) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $jc;
+  gap: $gap;
+}
+
+@mixin flex-column($ai, $gap) {
+  display: flex;
+  flex-direction: column;
+  align-items: $ai;
+  gap: $gap;
+}
+
+@mixin place-it($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+.unscrollable {
+  height: 100%;
+  overflow: hidden;
+}
