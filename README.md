@@ -27,9 +27,17 @@ To get a local copy of this project, do the following:
 &nbsp;
 
 
-&nbsp; &nbsp; &nbsp; &nbsp; **Home page (mobile)** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **About page (mobile)**
+&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Home page (mobile)** &nbsp;
 
-![Home page - mobile](./screenshots/home-page-mobile.gif)  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![About page - mobile](./screenshots/about-page-mobile.gif)
+&nbsp; ![Home page - mobile](./screenshots/home-page-mobile.gif) 
+
+&nbsp;
+
+&nbsp;
+
+&nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **About page (mobile)** &nbsp;
+
+ &nbsp; ![About page - mobile](./screenshots/about-page-mobile.gif)
 
 
 &nbsp;
