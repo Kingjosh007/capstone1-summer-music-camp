@@ -407,7 +407,6 @@ section .separator {
     .program-item {
       @include flex-column(center, 5px);
 
-      align-items: center;
       padding: 12px 8px;
       cursor: pointer;
       margin-inline: 2px;
