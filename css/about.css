@@ -843,7 +843,9 @@ footer.dark {
 footer.dark .footer-image img {
   filter: invert(0.85);
 }
-footer.dark .footer-text p, footer.dark .footer-email a, footer.dark .footer-icons a {
+footer.dark .footer-text p,
+footer.dark .footer-email a,
+footer.dark .footer-icons a {
   color: #ccc;
 }
 
@@ -921,7 +923,9 @@ footer.dark .footer-text p, footer.dark .footer-email a, footer.dark .footer-ico
   footer.dark .footer-image img {
     filter: invert(0.85);
   }
-  footer.dark .footer-text p, footer.dark .footer-email a, footer.dark .footer-icons a {
+  footer.dark .footer-text p,
+footer.dark .footer-email a,
+footer.dark .footer-icons a {
     color: #ccc;
   }
 }

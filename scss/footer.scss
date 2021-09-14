@@ -1,9 +1,7 @@
 footer {
   @include flex-row(center, 5%);
 
-
   padding-block: 3em;
-
 
   a {
     color: $primary-2;
@@ -11,7 +9,9 @@ footer {
 
   .footer-image {
     @include flex-row(flex-end, 0);
+
     width: 45%;
+
     img {
       width: 70%;
       height: auto;
@@ -20,7 +20,6 @@ footer {
 
   .footer-rest {
     @include flex-column(flex-start, 12px);
-
 
     padding-left: 10px;
 
@@ -68,7 +67,9 @@ footer {
       filter: invert(0.85);
     }
 
-    .footer-text p, .footer-email a, .footer-icons a {
+    .footer-text p,
+    .footer-email a,
+    .footer-icons a {
       color: #ccc;
     }
   }
@@ -136,6 +137,7 @@ footer {
         @include font-size-color($font-1, 14px, $primary-1);
       }
     }
+
     &.dark {
       background: #2e2e2e;
 
@@ -143,10 +145,11 @@ footer {
         filter: invert(0.85);
       }
 
-      .footer-text p, .footer-email a, .footer-icons a {
+      .footer-text p,
+      .footer-email a,
+      .footer-icons a {
         color: #ccc;
       }
     }
   }
-
 }

@@ -197,10 +197,16 @@ section .separator {
   }
 
   .instructor {
-    @include flex-row(center, 7px);
+    @include flex-row(center, 20px);
+
+    .img-container {
+      @include flex-row(flex-end, 0);
+
+      padding-left: 5%;
+    }
 
     img {
-      width: 95%;
+      width: 200px;
       height: auto;
     }
 
@@ -453,16 +459,21 @@ section .separator {
 
       .instructor {
         width: 35%;
+        margin: 20px;
 
         @include flex-row(center, 0);
 
-        img {
-          width: 60%;
-          height: auto;
+        .img-container {
+          padding-left: 0;
+
+          img {
+            width: 270px;
+            height: auto;
+          }
         }
 
         .instructor-text {
-          margin-left: -30%;
+          margin-left: 20px;
           margin-top: -10px;
 
           .separator {

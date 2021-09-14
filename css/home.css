@@ -526,10 +526,17 @@ section .separator {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 7px;
+  gap: 20px;
+}
+.instructors .instructor .img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0;
+  padding-left: 5%;
 }
 .instructors .instructor img {
-  width: 95%;
+  width: 200px;
   height: auto;
 }
 .instructors .instructor .instructor-text {
@@ -775,17 +782,21 @@ section .separator {
   }
   .instructors .instructors-container .instructor {
     width: 35%;
+    margin: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 0;
   }
-  .instructors .instructors-container .instructor img {
-    width: 60%;
+  .instructors .instructors-container .instructor .img-container {
+    padding-left: 0;
+  }
+  .instructors .instructors-container .instructor .img-container img {
+    width: 270px;
     height: auto;
   }
   .instructors .instructors-container .instructor .instructor-text {
-    margin-left: -30%;
+    margin-left: 20px;
     margin-top: -10px;
   }
   .instructors .instructors-container .instructor .instructor-text .separator {
@@ -914,7 +925,9 @@ footer.dark {
 footer.dark .footer-image img {
   filter: invert(0.85);
 }
-footer.dark .footer-text p, footer.dark .footer-email a, footer.dark .footer-icons a {
+footer.dark .footer-text p,
+footer.dark .footer-email a,
+footer.dark .footer-icons a {
   color: #ccc;
 }
 
@@ -992,7 +1005,9 @@ footer.dark .footer-text p, footer.dark .footer-email a, footer.dark .footer-ico
   footer.dark .footer-image img {
     filter: invert(0.85);
   }
-  footer.dark .footer-text p, footer.dark .footer-email a, footer.dark .footer-icons a {
+  footer.dark .footer-text p,
+footer.dark .footer-email a,
+footer.dark .footer-icons a {
     color: #ccc;
   }
 }
