@@ -29,7 +29,7 @@ header {
   background-attachment: scroll;
   background-position: 0 0;
   background-size: cover;
-  opacity: 0.09;
+  opacity: 0.12;
   background-color: $primary-3;
 }
 
@@ -211,10 +211,30 @@ header {
   }
 
   .header-desktop {
-    @include flex-row(center, 0);
+    @include flex-column(center, 0);
 
-    padding-bottom: 0;
     box-shadow: 0 2px 2px 2px gray;
+    padding-bottom: 5px;
+    width: 100vw;
+
+    .darkbar {
+      @include flex-row(flex-end, 2%);
+
+      position: absolute;
+      padding: 10px;
+      top: 0;
+      left: 0;
+      padding-right: 10%;
+      width: 100vw;
+      background: #3e3e3e;
+      color: #ddd;
+
+      a {
+        @include font-size-color($font-3, 14px, white);
+
+        text-decoration: none;
+      }
+    }
 
     .desktop-menu {
       @include flex-row(space-between, 0);
@@ -223,19 +243,19 @@ header {
         width: 10%;
 
         img {
-          position: absolute;
+          position: relative;
           left: 15%;
-          top: 10%;
+          top: 35%;
           width: auto;
-          height: 50px;
+          height: 40px;
         }
       }
 
       ul {
         @include flex-row(center, 5vw);
 
-        margin-left: 40vw;
-        margin-top: -2px;
+        margin-left: 42vw;
+        margin-top: 35px;
 
         .links-container a {
           @include font-size-color($font-3, 18px, $primary-1);
